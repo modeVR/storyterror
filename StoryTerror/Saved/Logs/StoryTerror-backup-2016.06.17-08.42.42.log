@@ -1,0 +1,1421 @@
+﻿Log file open, 06/13/16 13:49:31
+LogInit:Display: Running engine for game: StoryTerror
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-261978348) SRandInit(-261978347).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+LogStats: Stats thread started at 0.083634
+LogInit: Version: 4.11.2-2946394+++UE4+Release-4.11
+LogInit: API Version: 2927265
+LogInit: Compiled (64-bit): Apr 18 2016 02:18:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.11
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.11/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.06.13-04.49.31:531][  0]LogInit: Selected Device Profile: [Windows]
+[2016.06.13-04.49.31:531][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.06.13-04.49.31:543][  0]LogInit: Computer: GM2150054
+[2016.06.13-04.49.31:543][  0]LogInit: User: nwuser
+[2016.06.13-04.49.31:543][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.06.13-04.49.31:543][  0]LogInit: High frequency timer resolution =2.435781 MHz
+[2016.06.13-04.49.31:544][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2016.06.13-04.49.31:544][  0]LogMemory: Platform Memory Stats for Windows
+[2016.06.13-04.49.31:544][  0]LogMemory: Process Physical Memory: 312.09 MB used, 312.09 MB peak
+[2016.06.13-04.49.31:544][  0]LogMemory: Process Virtual Memory: 315.18 MB used, 315.18 MB peak
+[2016.06.13-04.49.31:544][  0]LogMemory: Physical Memory: 5317.74 MB used, 8114.15 MB total
+[2016.06.13-04.49.31:544][  0]LogMemory: Virtual Memory: 636.53 MB used, 134217728.00 MB total
+[2016.06.13-04.49.31:574][  0]LogTextLocalizationManager: No specific translations for ('ja-JP') exist, so ('ja') translations will be used.
+[2016.06.13-04.49.31:673][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:K2Node, Key:false):
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (816077464) Localized String: (偽)
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Localization/Engine/ja/Engine.locres) Source String Hash: (816077464) Localized String: (false)
+[2016.06.13-04.49.31:673][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:K2Node, Key:true):
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (-942328987) Localized String: (真)
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Localization/Engine/ja/Engine.locres) Source String Hash: (-942328987) Localized String: (true)
+[2016.06.13-04.49.31:673][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:bLoop):
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (2133979316) Localized String: (再生が最後まで終わった後、ロープ再生するようにしますか？)
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (2133979316) Localized String: (ループが最後まで到達した時に、アニメーションのループを継続するべきか？)
+[2016.06.13-04.49.31:673][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:X):
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (2060772590) Localized String: (ブレンドスペースで値を取得するX座標)
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (2060772590) Localized String: (ブレンドスペースでサンプリングするX座標)
+[2016.06.13-04.49.31:673][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:Y):
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (-1719607538) Localized String: (ブレンドスペースで値を取得するY座標)
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (-1719607538) Localized String: (ブレンドスペースでサンプリングするY座標)
+[2016.06.13-04.49.31:673][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:Z):
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (1728943471) Localized String: (ブレンドスペースで値を取得するZ座標)
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (1728943471) Localized String: (ブレンドスペースでサンプリングするZ座標)
+[2016.06.13-04.49.31:673][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:BlendSpace):
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (1599043277) Localized String: (再生するブレンドスペースのアセット)
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (1599043277) Localized String: (再生するブレンド空間アセット)
+[2016.06.13-04.49.31:673][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_StateMachine:MaxTransitionsPerFrame):
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (1567650430) Localized String: (このマシーンで1フレームあたりに同時に処理できるトランジションの最大数)
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (1567650430) Localized String: (単一フレームでマシーンが「同時」に受け取れる遷移の最大数)
+[2016.06.13-04.49.31:673][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:PlayRate):
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (-1274923958) Localized String: (再生速度の倍率です。負の数値も使う事ができます。その場合逆再生になります。)
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (-1274923958) Localized String: (再生レート乗数。アニメーションを逆再生する負の値にすることができます。)
+[2016.06.13-04.49.31:879][  0]LogD3D11RHI: D3D11 adapters:
+[2016.06.13-04.49.31:903][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 960M   ' (Feature Level 11_0)
+[2016.06.13-04.49.31:903][  0]LogD3D11RHI:       1972MB of dedicated video memory, 0MB of dedicated system memory, and 2048MB of shared system memory, 1 output[s]
+[2016.06.13-04.49.31:912][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 4600' (Feature Level 11_0)
+[2016.06.13-04.49.31:912][  0]LogD3D11RHI:       0MB of dedicated video memory, 0MB of dedicated system memory, and 1792MB of shared system memory, 0 output[s]
+[2016.06.13-04.49.31:913][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.06.13-04.49.31:913][  0]LogD3D11RHI:       0MB of dedicated video memory, 0MB of dedicated system memory, and 256MB of shared system memory, 0 output[s]
+[2016.06.13-04.49.31:913][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.06.13-04.49.31:920][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.06.13-04.49.31:920][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 960M   
+[2016.06.13-04.49.31:920][  0]LogD3D11RHI:   Driver Version: Unknown (internal Unknown)
+[2016.06.13-04.49.31:920][  0]LogD3D11RHI:      Driver Date: Unknown
+[2016.06.13-04.49.31:920][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.06.13-04.49.31:935][  0]LogD3D11RHI: Async texture creation enabled
+[2016.06.13-04.49.31:957][  0]LogShaderCompilers: Guid format shader working directory is -18 characters bigger than the processId version (../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Intermediate/Shaders/WorkingDirectory/10576/).
+[2016.06.13-04.49.31:957][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/nwuser.DA/AppData/Local/Temp/UnrealShaderWorkingDir/B417C89F4A394A6780DDDF8759EF6DC2/'.
+[2016.06.13-04.49.31:957][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.06.13-04.49.33:255][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.06.13-04.49.33:262][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.06.13-04.49.33:269][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.06.13-04.49.33:276][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.06.13-04.49.33:282][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.06.13-04.49.33:287][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.06.13-04.49.33:291][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.06.13-04.49.33:295][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.06.13-04.49.33:299][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.06.13-04.49.33:303][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.06.13-04.49.33:308][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.06.13-04.49.33:316][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.06.13-04.49.33:316][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.06.13-04.49.33:318][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.06.13-04.49.33:337][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.06.13-04.49.33:340][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.06.13-04.49.33:344][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.06.13-04.49.33:347][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.06.13-04.49.33:351][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.06.13-04.49.33:351][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.06.13-04.49.33:454][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.06.13-04.49.33:515][  0]LogDerivedDataCache: Loaded boot cache 0.06s 46MB C:/Users/nwuser.DA/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.06.13-04.49.33:515][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/nwuser.DA/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc
+[2016.06.13-04.49.33:515][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.06.13-04.49.33:515][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.06.13-04.49.33:515][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.06.13-04.49.33:515][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.06.13-04.49.33:533][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.06.13-04.49.33:545][  0]LogDerivedDataCache: Using Local data cache path C:/Users/nwuser.DA/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.06.13-04.49.33:739][  0]LogInit: Selected Device Profile: [Windows]
+[2016.06.13-04.49.33:740][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.06.13-04.49.33:783][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2016.06.13-04.49.33:931][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.06.13-04.49.33:931][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.06.13-04.49.33:931][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.06.13-04.49.34:256][  0]LogUObjectArray: 27679 objects as part of root set at end of initial load.
+[2016.06.13-04.49.34:256][  0]LogUObjectAllocator: 5591592 out of 0 bytes used by permanent object pool.
+[2016.06.13-04.49.34:256][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.06.13-04.49.34:266][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.06.13-04.49.34:388][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.06.13-04.49.34:388][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.06.13-04.49.34:508][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.06.13-04.49.34:508][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.06.13-04.49.34:508][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.06.13-04.49.34:508][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.06.13-04.49.34:508][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.06.13-04.49.34:508][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.06.13-04.49.35:208][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.06.13-04.49.35:320][  0]LogAssetRegistry: FAssetRegistry took 0.0226 seconds to start up
+[2016.06.13-04.49.35:325][  0]LogDirectoryWatcher:Warning: Failed to begin reading directory changes for ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/. Error: この操作を正しく終了しました。 (0x00000000)
+[2016.06.13-04.49.35:522][  0]SourceControl: 情報 ソースコントロールは無効です
+[2016.06.13-04.49.36:676][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2016.06.13-04.49.36:760][  0]LogEngine: Initializing Engine...
+[2016.06.13-04.49.36:930][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.06.13-04.49.36:934][  0]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-04.49.36:947][  0]LogInit: FAudioDevice initialized.
+[2016.06.13-04.49.36:977][  0]LogDerivedDataCache: Saved boot cache 0.03s 46MB C:/Users/nwuser.DA/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.06.13-04.49.36:980][  0]LogInit: Texture streaming: Enabled
+[2016.06.13-04.49.37:011][  0]LogInit: Transaction tracking system initialized
+[2016.06.13-04.49.37:045][  0]BlueprintLog: New page: エディタの読み込み
+[2016.06.13-04.49.37:156][  0]LocalizationService: 情報 ローカライズのサービスが無効になりました
+[2016.06.13-04.49.37:240][  0]LogConsoleResponse:Display: 
+[2016.06.13-04.49.37:360][  0]LogFileCache: Scanning file cache for directory 'C:/Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/' took 0.01s
+[2016.06.13-04.49.37:360][  0]LogDirectoryWatcher:Warning: Failed to begin reading directory changes for C:/Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/. Error: この操作を正しく終了しました。 (0x00000000)
+[2016.06.13-04.49.37:360][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.06.13-04.49.37:360][  0]LogCook:Display: Mobile HDR setting 1
+[2016.06.13-04.49.37:360][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.06.13-04.49.37:709][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.06.13-04.49.37:709][  0]LightingResults: New page: ライティングのビルド
+[2016.06.13-04.49.37:713][  0]MapCheck: New page: マップをチェック
+[2016.06.13-04.49.37:713][  0]LightingResults: New page: <何も選択されていません>
+[2016.06.13-04.49.38:313][  0]LogAIModule: Creating AISystem for world Untitled_1
+[2016.06.13-04.49.38:319][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.06.13-04.49.38:325][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.06.13-04.49.38:372][  0]MapCheck: 情報 マップチェックが完了: 0 エラー、 0 警告、完了に 46.69ミリ秒かかりました。
+[2016.06.13-04.49.38:372][  0]LogFileHelpers: Loading map 'Template_Default' took 0.664
+[2016.06.13-04.49.38:525][  0]LogCollectionManager: Loaded 1 collections in 0.012611 seconds
+[2016.06.13-04.49.38:568][  0]LogFileCache: Scanning file cache for directory 'C:/Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Collections/' took 0.01s
+[2016.06.13-04.49.38:568][  0]LogFileCache: Scanning file cache for directory 'C:/Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/Developers/nwuser/Collections/' took 0.01s
+[2016.06.13-04.49.38:568][  0]LogFileCache: Scanning file cache for directory 'C:/Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/Collections/' took 0.01s
+[2016.06.13-04.49.38:568][  0]LogCollectionManager: Rebuilt the GUID cache for 1 collections in 0.000005 seconds
+[2016.06.13-04.49.38:591][  0]LogCollectionManager: Rebuilt the hierarchy cache for 1 collections in 0.000001 seconds
+[2016.06.13-04.49.38:603][  0]LogContentBrowser: Native class hierarchy populated in 0.0108 seconds. Added 1979 classes and 343 folders.
+[2016.06.13-04.49.38:610][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.06.13-04.49.38:610][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.06.13-04.49.38:611][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0005 seconds. Added 12 classes and 0 folders.
+[2016.06.13-04.49.38:617][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2016.06.13-04.49.38:625][  0]LogContentBrowser: Native class hierarchy updated for 'SuperSearch' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2016.06.13-04.49.38:681][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2016.06.13-04.49.38:686][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2016.06.13-04.49.38:742][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.06.13-04.49.38:747][  0]LogUObjectGlobals:Warning: オブジェクト 'Class なし.' が見つかりませんでした
+[2016.06.13-04.49.38:776][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2016.06.13-04.49.38:776][  0]LogLoad: Full Startup: 8.17 seconds (BP compile: 0.04 seconds)
+[2016.06.13-04.49.38:776][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.06.13-04.49.38:776][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.06.13-04.49.38:851][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.06.13-04.49.38:854][  0]LogOcInput: OculusInput pre-init called
+[2016.06.13-04.49.38:918][  0]SourceControl: 情報 On branch master
+[2016.06.13-04.49.38:919][  0]SourceControl: 情報 Your branch is up-to-date with 'origin/master'.
+[2016.06.13-04.49.38:919][  0]SourceControl: 情報 Changes not staged for commit:
+[2016.06.13-04.49.38:919][  0]SourceControl: 情報   (use "git add <file>..." to update what will be committed)
+[2016.06.13-04.49.38:919][  0]SourceControl: 情報   (use "git checkout -- <file>..." to discard changes in working directory)
+[2016.06.13-04.49.38:919][  0]SourceControl: 情報 	modified:   StoryTerror/Intermediate/CachedAssetRegistry.bin
+[2016.06.13-04.49.38:919][  0]SourceControl: 情報 	modified:   StoryTerror/Intermediate/Config/CoalescedSourceConfigs/Engine.ini
+[2016.06.13-04.49.38:919][  0]SourceControl: 情報 	modified:   StoryTerror/Intermediate/Config/CoalescedSourceConfigs/Game.ini
+[2016.06.13-04.49.38:919][  0]SourceControl: 情報 	modified:   StoryTerror/Saved/Config/Windows/Engine.ini
+[2016.06.13-04.49.38:919][  0]SourceControl: 情報 Untracked files:
+[2016.06.13-04.49.38:919][  0]SourceControl: 情報   (use "git add <file>..." to include in what will be committed)
+[2016.06.13-04.49.38:919][  0]SourceControl: 情報 	StoryTerror/Saved/Logs/
+[2016.06.13-04.49.38:919][  0]SourceControl: 情報 no changes added to commit (use "git add" and/or "git commit -a")
+[2016.06.13-04.49.38:919][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.06.13-04.49.39:103][  0]LogRenderer: Reallocating scene render targets to support 588x460 (Frame:2).
+[2016.06.13-04.49.39:255][  1]LogAssetRegistry: Asset discovery search completed in 3.9572 seconds
+[2016.06.13-04.49.39:255][  1]LogCollectionManager: Rebuilt the object cache for 1 collections in 0.000002 seconds (found 0 objects)
+[2016.06.13-04.49.39:255][  1]LogCollectionManager: Fixed up redirectors for 1 collections in 0.000023 seconds (updated 0 objects)
+[2016.06.13-04.49.49:864][622]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2016.06.13-04.51.03:101][432]SourceControl: 情報 On branch master
+[2016.06.13-04.51.03:101][432]SourceControl: 情報 Your branch is up-to-date with 'origin/master'.
+[2016.06.13-04.51.03:101][432]SourceControl: 情報 Changes not staged for commit:
+[2016.06.13-04.51.03:101][432]SourceControl: 情報   (use "git add <file>..." to update what will be committed)
+[2016.06.13-04.51.03:101][432]SourceControl: 情報   (use "git checkout -- <file>..." to discard changes in working directory)
+[2016.06.13-04.51.03:101][432]SourceControl: 情報 	modified:   StoryTerror/Intermediate/CachedAssetRegistry.bin
+[2016.06.13-04.51.03:101][432]SourceControl: 情報 	modified:   StoryTerror/Intermediate/Config/CoalescedSourceConfigs/Engine.ini
+[2016.06.13-04.51.03:101][432]SourceControl: 情報 	modified:   StoryTerror/Intermediate/Config/CoalescedSourceConfigs/Game.ini
+[2016.06.13-04.51.03:101][432]SourceControl: 情報 	modified:   StoryTerror/Saved/Config/Windows/EditorPerProjectUserSettings.ini
+[2016.06.13-04.51.03:101][432]SourceControl: 情報 	modified:   StoryTerror/Saved/Config/Windows/Engine.ini
+[2016.06.13-04.51.03:101][432]SourceControl: 情報 Untracked files:
+[2016.06.13-04.51.03:101][432]SourceControl: 情報   (use "git add <file>..." to include in what will be committed)
+[2016.06.13-04.51.03:101][432]SourceControl: 情報 	StoryTerror/Saved/Logs/
+[2016.06.13-04.51.03:101][432]SourceControl: 情報 no changes added to commit (use "git add" and/or "git commit -a")
+[2016.06.13-04.51.13:683][ 52]SourceControl:Error: エラー fatal: Could not switch to '/Temp/': No such file or directory
+[2016.06.13-04.54.10:559][136]LogActorFactory: Actor Factory created Cube
+[2016.06.13-04.54.11:870][211]LogActorFactory: Actor Factory created Cube
+[2016.06.13-04.54.14:193][348]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2016.06.13-04.54.15:454][420]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube)
+[2016.06.13-04.54.15:828][440]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
+[2016.06.13-04.54.35:904][469]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0010 seconds. Added 108 classes and 0 folders.
+[2016.06.13-04.54.36:678][470]LogRenderer: Reallocating scene render targets to support 808x652 (Frame:11340).
+[2016.06.13-04.54.38:557][570]LogRenderer: Reallocating scene render targets to support 912x724 (Frame:11467).
+[2016.06.13-04.54.57:297][690]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
+[2016.06.13-04.55.01:016][913]LogEditorActor: Deleted Actor: StaticMeshActor
+[2016.06.13-04.55.01:051][913]LogEditorActor: Deleted 1 Actors (0.035 secs)
+[2016.06.13-04.55.08:060][ 89]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DEADCLASS_bullet_C_0' or package '/Engine/Transient'.
+[2016.06.13-04.55.08:060][ 89]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DEADCLASS_bullet_C_1' or package '/Engine/Transient'.
+[2016.06.13-04.55.08:060][ 89]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_SKEL_bullet_C_27' or package '/Engine/Transient'.
+[2016.06.13-04.55.08:061][ 89]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_bullet_C_26' or package '/Engine/Transient'.
+[2016.06.13-04.56.38:073][419]SourceControl: 情報 On branch master
+[2016.06.13-04.56.38:073][419]SourceControl: 情報 Your branch is up-to-date with 'origin/master'.
+[2016.06.13-04.56.38:073][419]SourceControl: 情報 Changes not staged for commit:
+[2016.06.13-04.56.38:073][419]SourceControl: 情報   (use "git add <file>..." to update what will be committed)
+[2016.06.13-04.56.38:073][419]SourceControl: 情報   (use "git checkout -- <file>..." to discard changes in working directory)
+[2016.06.13-04.56.38:073][419]SourceControl: 情報 	modified:   StoryTerror/Intermediate/CachedAssetRegistry.bin
+[2016.06.13-04.56.38:073][419]SourceControl: 情報 	modified:   StoryTerror/Intermediate/Config/CoalescedSourceConfigs/Engine.ini
+[2016.06.13-04.56.38:073][419]SourceControl: 情報 	modified:   StoryTerror/Intermediate/Config/CoalescedSourceConfigs/Game.ini
+[2016.06.13-04.56.38:073][419]SourceControl: 情報 	modified:   StoryTerror/Saved/Autosaves/PackageRestoreData.json
+[2016.06.13-04.56.38:073][419]SourceControl: 情報 	modified:   StoryTerror/Saved/Config/Windows/EditorPerProjectUserSettings.ini
+[2016.06.13-04.56.38:073][419]SourceControl: 情報 	modified:   StoryTerror/Saved/Config/Windows/Engine.ini
+[2016.06.13-04.56.38:073][419]SourceControl: 情報 Untracked files:
+[2016.06.13-04.56.38:073][419]SourceControl: 情報   (use "git add <file>..." to include in what will be committed)
+[2016.06.13-04.56.38:073][419]SourceControl: 情報 	StoryTerror/Saved/Logs/
+[2016.06.13-04.56.38:073][419]SourceControl: 情報 no changes added to commit (use "git add" and/or "git commit -a")
+[2016.06.13-04.56.38:620][419]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Hasegawa/MyWorld" FILE="../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/Hasegawa/MyWorld.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2016.06.13-04.56.38:645][419]LogSavePackage: Save=7.66ms
+[2016.06.13-04.56.38:645][419]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/MyWorld1DEAB988421047AEF4AD0BB8444BAC2E.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/Hasegawa/MyWorld.umap'
+[2016.06.13-04.56.38:648][419]LogSavePackage: Total save time: 10.64ms
+[2016.06.13-04.56.38:648][419]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/Hasegawa/MyWorld.umap
+[2016.06.13-04.56.38:839][419]LogFileHelpers: Saving map 'MyWorld' took 0.281
+[2016.06.13-04.56.45:899][641]Cmd: MAP LOAD FILE="../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/Hasegawa/MyWorld.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.06.13-04.56.45:900][641]LightingResults: New page: ライティングのビルド
+[2016.06.13-04.56.45:926][641]LoadErrors: New page: マップをロード中: MyWorld.umap
+[2016.06.13-04.56.45:927][641]MapCheck: New page: マップをチェック
+[2016.06.13-04.56.45:927][641]LightingResults: New page: <何も選択されていません>
+[2016.06.13-04.56.46:073][641]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.06.13-04.56.46:073][641]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-04.56.46:104][641]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.06.13-04.56.46:164][641]MapCheck: 情報 マップチェックが完了: 0 エラー、 0 警告、完了に 59.626ミリ秒かかりました。
+[2016.06.13-04.56.46:166][641]LogFileHelpers: Loading map 'MyWorld' took 0.269
+[2016.06.13-04.56.58:189][260]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Hasegawa/MyWold" FILE="../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/Hasegawa/MyWold.uasset" SILENT=true
+[2016.06.13-04.56.58:192][260]LogSavePackage: Save=1.84ms
+[2016.06.13-04.56.58:192][260]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/MyWold93066DEB4BED7909A4B4A6A071817A68.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/Hasegawa/MyWold.uasset'
+[2016.06.13-04.56.58:194][260]LogSavePackage: Total save time: 4.13ms
+[2016.06.13-04.56.58:194][260]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/Hasegawa/MyWold.uasset
+[2016.06.13-04.56.58:370][260]Cmd: MAP LOAD FILE="../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/Hasegawa/MyWorld.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.06.13-04.56.58:370][260]LightingResults: New page: ライティングのビルド
+[2016.06.13-04.56.58:394][260]LoadErrors: New page: マップをロード中: MyWorld.umap
+[2016.06.13-04.56.58:394][260]MapCheck: New page: マップをチェック
+[2016.06.13-04.56.58:394][260]LightingResults: New page: <何も選択されていません>
+[2016.06.13-04.56.58:413][260]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-04.56.58:514][260]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.06.13-04.56.58:545][260]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.06.13-04.56.58:599][260]MapCheck: 情報 マップチェックが完了: 0 エラー、 0 警告、完了に 54.133ミリ秒かかりました。
+[2016.06.13-04.56.58:600][260]LogFileHelpers: Loading map 'MyWorld' took 0.232
+[2016.06.13-04.57.25:811][870]Cmd: DELETE
+[2016.06.13-04.57.25:811][870]Cmd: ACTOR DELETE
+[2016.06.13-04.57.25:812][870]LogEditorActor: Deleted Actor: LightmassCharacterIndirectDetailVolume
+[2016.06.13-04.57.25:812][870]LogActorComponent: UnregisterComponent: (/Engine/Transient.MovementComponent0) Not registered. Aborting.
+[2016.06.13-04.57.25:831][870]LogEditorActor: Deleted 1 Actors (0.020 secs)
+[2016.06.13-04.58.01:244][949]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2016.06.13-04.58.07:518][317]LogEditorViewport: Clicking Background
+[2016.06.13-04.58.11:136][534]LogEditorViewport: Clicking on Actor (LMB): AtmosphericFog (AtmosphericFog)
+[2016.06.13-04.58.31:276][726]LogEditorViewport: Clicking on Actor (LMB): SkyLight (SkyLight)
+[2016.06.13-04.58.49:796][821]Cmd: DELETE
+[2016.06.13-04.58.49:796][821]Cmd: ACTOR DELETE
+[2016.06.13-04.58.49:797][821]LogEditorActor: Deleted Actor: SpotLight
+[2016.06.13-04.58.49:814][821]LogEditorActor: Deleted 1 Actors (0.017 secs)
+[2016.06.13-04.58.53:941][ 69]LogEditorViewport: Clicking on Actor (LMB): SkyLight (SkyLight)
+[2016.06.13-04.59.18:808][547]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.13-04.59.18:808][547]PIE: New page: PIEセッション: MyWorld (2016/06/13 22:59:18)
+[2016.06.13-04.59.18:808][547]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-04.59.18:810][547]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001752s)
+[2016.06.13-04.59.18:811][547]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-04.59.18:811][547]LogPlayLevel: PIE: World Init took: (0.000914s)
+[2016.06.13-04.59.18:811][547]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.002969s)
+[2016.06.13-04.59.18:832][547]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-04.59.18:846][547]LogInit: FAudioDevice initialized.
+[2016.06.13-04.59.18:900][547]LogWorld: Game class is 'GameMode'
+[2016.06.13-04.59.18:903][547]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-13.59.18
+[2016.06.13-04.59.18:903][547]LogWorld: Bringing up level for play took: 0.001397
+[2016.06.13-04.59.18:909][547]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 9 classes and 0 folders.
+[2016.06.13-04.59.18:910][547]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld -0.336のプレイ イン エディタの開始時間
+[2016.06.13-04.59.24:352][864]LogEditorViewport: Clicking on Actor (LMB): AtmosphericFog (AtmosphericFog)
+[2016.06.13-04.59.29:513][171]LogEditorViewport: Clicking Background
+[2016.06.13-04.59.31:662][300]LogEditorViewport: Clicking on Actor (LMB): AtmosphericFog (AtmosphericFog)
+[2016.06.13-04.59.35:574][532]LogEditorViewport: Clicking Background
+[2016.06.13-04.59.43:608][ 14]LogEditorViewport: Clicking on Actor (LMB): AtmosphericFog (AtmosphericFog)
+[2016.06.13-04.59.46:098][160]Cmd: DELETE
+[2016.06.13-04.59.46:098][160]Cmd: ACTOR DELETE
+[2016.06.13-04.59.46:099][160]LogEditorActor: Deleted Actor: AtmosphericFog
+[2016.06.13-04.59.46:117][160]LogEditorActor: Deleted 1 Actors (0.019 secs)
+[2016.06.13-05.00.16:895][974]LogEditorViewport: Clicking on Actor (LMB): ExponentialHeightFog (ExponentialHeightFog)
+[2016.06.13-05.00.18:170][ 48]Cmd: DELETE
+[2016.06.13-05.00.18:170][ 48]Cmd: ACTOR DELETE
+[2016.06.13-05.00.18:170][ 48]LogEditorActor: Deleted Actor: ExponentialHeightFog
+[2016.06.13-05.00.18:190][ 48]LogEditorActor: Deleted 1 Actors (0.020 secs)
+[2016.06.13-05.00.19:862][149]LogEditorViewport: Clicking on Actor (LMB): AtmosphericFog (AtmosphericFog)
+[2016.06.13-05.00.42:140][468]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Hasegawa/MyWorld" FILE="../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/Hasegawa/MyWorld.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2016.06.13-05.00.42:171][468]LogSavePackage: Save=10.33ms
+[2016.06.13-05.00.42:171][468]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/MyWorld895CF3664A6943AA8562DF96DB8A7E6A.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/Hasegawa/MyWorld.umap'
+[2016.06.13-05.00.42:175][468]LogSavePackage: Total save time: 15.92ms
+[2016.06.13-05.00.42:175][468]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/Hasegawa/MyWorld.umap
+[2016.06.13-05.05.40:708][573]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Hasegawa/MyWorld" FILE="../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/Hasegawa/MyWorld.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2016.06.13-05.05.40:741][573]LogSavePackage: Save=10.28ms
+[2016.06.13-05.05.40:741][573]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/MyWorld827B8CF642AF1B94D9C7F5856AF51F8F.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/Hasegawa/MyWorld.umap'
+[2016.06.13-05.05.40:744][573]LogSavePackage: Total save time: 14.88ms
+[2016.06.13-05.05.40:744][573]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/Hasegawa/MyWorld.umap
+[2016.06.13-05.07.42:164][304]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.13-05.07.42:164][304]PIE: New page: PIEセッション: MyWorld (2016/06/13 23:07:42)
+[2016.06.13-05.07.42:164][304]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-05.07.42:166][304]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001569s)
+[2016.06.13-05.07.42:167][304]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-05.07.42:167][304]LogPlayLevel: PIE: World Init took: (0.001281s)
+[2016.06.13-05.07.42:167][304]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.003137s)
+[2016.06.13-05.07.42:191][304]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-05.07.42:203][304]LogInit: FAudioDevice initialized.
+[2016.06.13-05.07.42:240][304]LogWorld: Game class is 'GameMode'
+[2016.06.13-05.07.42:242][304]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-14.07.42
+[2016.06.13-05.07.42:242][304]LogWorld: Bringing up level for play took: 0.001528
+[2016.06.13-05.07.42:244][304]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld 0.998のプレイ イン エディタの開始時間
+[2016.06.13-05.08.04:141][605]LogActorFactory: Actor Factory created Cube
+[2016.06.13-05.08.04:512][626]LogActorFactory: Actor Factory created Cube
+[2016.06.13-05.08.37:126][573]LogEditorViewport: Clicking on Actor (LMB): SkyLight (SkyLight)
+[2016.06.13-05.09.11:349][620]LogEditorViewport: Clicking Background
+[2016.06.13-05.09.13:516][750]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube)
+[2016.06.13-05.09.22:730][294]LogEditorViewport: Clicking Background
+[2016.06.13-05.10.03:171][713]Cmd: DELETE
+[2016.06.13-05.10.03:171][713]Cmd: ACTOR DELETE
+[2016.06.13-05.10.03:172][713]LogEditorActor: Deleted Actor: SpotLight
+[2016.06.13-05.10.03:192][713]LogEditorActor: Deleted 1 Actors (0.021 secs)
+[2016.06.13-05.10.27:933][195]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube)
+[2016.06.13-05.10.43:150][101]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.13-05.10.43:150][101]PIE: New page: PIEセッション: MyWorld (2016/06/13 23:10:43)
+[2016.06.13-05.10.43:150][101]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-05.10.43:152][101]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001875s)
+[2016.06.13-05.10.43:153][101]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-05.10.43:153][101]LogPlayLevel: PIE: World Init took: (0.000968s)
+[2016.06.13-05.10.43:153][101]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.003078s)
+[2016.06.13-05.10.43:173][101]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-05.10.43:185][101]LogInit: FAudioDevice initialized.
+[2016.06.13-05.10.43:220][101]LogWorld: Game class is 'GameMode'
+[2016.06.13-05.10.43:223][101]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-14.10.43
+[2016.06.13-05.10.43:223][101]LogWorld: Bringing up level for play took: 0.001813
+[2016.06.13-05.10.43:225][101]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld -0.021のプレイ イン エディタの開始時間
+[2016.06.13-05.10.58:679][  9]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2016.06.13-05.11.03:334][276]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Hasegawa/MyWorld" FILE="../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/Hasegawa/MyWorld.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2016.06.13-05.11.03:371][276]LogSavePackage: Save=15.94ms
+[2016.06.13-05.11.03:371][276]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/MyWorld55A363264D4DD4BA5C340F8BAB503546.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/Hasegawa/MyWorld.umap'
+[2016.06.13-05.11.03:374][276]LogSavePackage: Total save time: 21.79ms
+[2016.06.13-05.11.03:374][276]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/Hasegawa/MyWorld.umap
+[2016.06.13-05.12.13:754][848]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Hasegawa/MyWorld" FILE="../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/Hasegawa/MyWorld.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2016.06.13-05.12.13:789][848]LogSavePackage: Save=14.73ms
+[2016.06.13-05.12.13:789][848]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/MyWorldBC170819453B4B11C0AB518FEF3372B2.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/Hasegawa/MyWorld.umap'
+[2016.06.13-05.12.13:791][848]LogSavePackage: Total save time: 17.35ms
+[2016.06.13-05.12.13:791][848]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/Hasegawa/MyWorld.umap
+[2016.06.13-05.13.09:065][145]EditorErrors: New page: アクタの親子付け
+[2016.06.13-05.13.32:044][500]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.13-05.13.32:044][500]PIE: New page: PIEセッション: MyWorld (2016/06/13 23:13:32)
+[2016.06.13-05.13.32:044][500]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-05.13.32:046][500]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001991s)
+[2016.06.13-05.13.32:047][500]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-05.13.32:047][500]LogPlayLevel: PIE: World Init took: (0.001206s)
+[2016.06.13-05.13.32:048][500]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.003510s)
+[2016.06.13-05.13.32:071][500]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-05.13.32:084][500]LogInit: FAudioDevice initialized.
+[2016.06.13-05.13.32:112][500]LogWorld: Game class is 'GameMode'
+[2016.06.13-05.13.32:115][500]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-14.13.32
+[2016.06.13-05.13.32:115][500]LogWorld: Bringing up level for play took: 0.001887
+[2016.06.13-05.13.32:118][500]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld 0.872のプレイ イン エディタの開始時間
+[2016.06.13-05.13.51:078][610]Cmd: BRUSH ADD SELECTNEWBRUSH
+[2016.06.13-05.14.01:542][220]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.13-05.14.01:543][220]PIE: New page: PIEセッション: MyWorld (2016/06/13 23:14:01)
+[2016.06.13-05.14.01:543][220]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-05.14.01:607][220]LogPlayLevel: PIE: StaticDuplicateObject took: (0.064471s)
+[2016.06.13-05.14.01:608][220]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-05.14.01:608][220]LogPlayLevel: PIE: World Init took: (0.000643s)
+[2016.06.13-05.14.01:608][220]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.065328s)
+[2016.06.13-05.14.01:630][220]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-05.14.01:641][220]LogInit: FAudioDevice initialized.
+[2016.06.13-05.14.01:671][220]LogWorld: Game class is 'GameMode'
+[2016.06.13-05.14.01:673][220]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-14.14.01
+[2016.06.13-05.14.01:674][220]LogWorld: Bringing up level for play took: 0.001785
+[2016.06.13-05.14.01:676][220]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld 0.429のプレイ イン エディタの開始時間
+[2016.06.13-05.16.37:785][577]LogEditorViewport: Clicking on Actor (LMB): Character (Character)
+[2016.06.13-05.17.04:960][202]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube)
+[2016.06.13-05.17.06:605][297]LogEditorViewport: Clicking on Actor (LMB): Character (Character)
+[2016.06.13-05.18.37:244][648]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.13-05.18.37:244][648]PIE: New page: PIEセッション: MyWorld (2016/06/13 23:18:37)
+[2016.06.13-05.18.37:244][648]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-05.18.37:249][648]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005281s)
+[2016.06.13-05.18.37:251][648]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-05.18.37:251][648]LogPlayLevel: PIE: World Init took: (0.001362s)
+[2016.06.13-05.18.37:251][648]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.006840s)
+[2016.06.13-05.18.37:275][648]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-05.18.37:288][648]LogInit: FAudioDevice initialized.
+[2016.06.13-05.18.37:318][648]LogWorld: Game class is 'GameMode'
+[2016.06.13-05.18.37:321][648]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-14.18.37
+[2016.06.13-05.18.37:322][648]LogWorld: Bringing up level for play took: 0.002862
+[2016.06.13-05.18.37:323][648]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld 0.078のプレイ イン エディタの開始時間
+[2016.06.13-05.18.45:500][124]LogEditorViewport: Clicking on Actor (LMB): Character (Character)
+[2016.06.13-05.19.15:442][910]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.13-05.19.15:442][910]PIE: New page: PIEセッション: MyWorld (2016/06/13 23:19:15)
+[2016.06.13-05.19.15:442][910]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-05.19.15:446][910]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004159s)
+[2016.06.13-05.19.15:447][910]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-05.19.15:448][910]LogPlayLevel: PIE: World Init took: (0.001401s)
+[2016.06.13-05.19.15:448][910]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.005813s)
+[2016.06.13-05.19.15:495][910]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-05.19.15:506][910]LogInit: FAudioDevice initialized.
+[2016.06.13-05.19.15:538][910]LogWorld: Game class is 'GameMode'
+[2016.06.13-05.19.15:541][910]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-14.19.15
+[2016.06.13-05.19.15:542][910]LogWorld: Bringing up level for play took: 0.002757
+[2016.06.13-05.19.15:543][910]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld 0.298のプレイ イン エディタの開始時間
+[2016.06.13-05.21.39:206][799]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.13-05.21.39:206][799]PIE: New page: PIEセッション: MyWorld (2016/06/13 23:21:39)
+[2016.06.13-05.21.39:206][799]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-05.21.39:213][799]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006181s)
+[2016.06.13-05.21.39:214][799]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-05.21.39:214][799]LogPlayLevel: PIE: World Init took: (0.001228s)
+[2016.06.13-05.21.39:214][799]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.007639s)
+[2016.06.13-05.21.39:214][799]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-05.21.39:257][799]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-05.21.39:271][799]LogInit: FAudioDevice initialized.
+[2016.06.13-05.21.39:306][799]LogWorld: Game class is 'GameMode'
+[2016.06.13-05.21.39:309][799]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-14.21.39
+[2016.06.13-05.21.39:310][799]LogWorld: Bringing up level for play took: 0.002706
+[2016.06.13-05.21.39:311][799]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld 0.065のプレイ イン エディタの開始時間
+[2016.06.13-05.22.41:611][246]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-05.22.41:676][246]LogSavePackage: Save=33.31ms
+[2016.06.13-05.22.41:676][246]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/MyWorld_Auto11F214F694A46F72741F11F9A99413760.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/Hasegawa/MyWorld_Auto1.umap'
+[2016.06.13-05.22.41:677][246]LogSavePackage: Total save time: 37.81ms
+[2016.06.13-05.22.41:677][246]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/Hasegawa/MyWorld_Auto1.umap
+[2016.06.13-05.22.41:679][246]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Hasegawa/MyWorld' took 0.068
+[2016.06.13-05.22.41:679][246]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.068
+[2016.06.13-05.22.41:684][246]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Character_Blueprint] ([1] browsable assets)...
+[2016.06.13-05.22.41:726][246]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Character_Blueprint.Character_Blueprint]
+[2016.06.13-05.22.41:726][246]OBJ SavePackage: Finished generating thumbnails for package [/Game/Character_Blueprint]
+[2016.06.13-05.22.41:758][246]LogSavePackage: Save=30.71ms
+[2016.06.13-05.22.41:759][246]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Character_Blueprint_Auto1977C10AB422B1FEC78A7D5AC3E31A041.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/Character_Blueprint_Auto1.uasset'
+[2016.06.13-05.22.41:760][246]LogSavePackage: Total save time: 32.18ms
+[2016.06.13-05.22.41:760][246]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/Character_Blueprint_Auto1.uasset
+[2016.06.13-05.22.41:760][246]LogFileHelpers: Auto-saving content packages took 0.079
+[2016.06.13-05.23.13:341][608]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-05.23.14:951][608]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_SKEL_Character_Blueprint_C_35' or package '/Engine/Transient'.
+[2016.06.13-05.23.14:951][608]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DEADCLASS_Character_Blueprint_C_3' or package '/Engine/Transient'.
+[2016.06.13-05.23.14:951][608]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_Character_Blueprint_C_34' or package '/Engine/Transient'.
+[2016.06.13-05.23.14:951][608]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DEADCLASS_Character_Blueprint_C_2' or package '/Engine/Transient'.
+[2016.06.13-05.32.42:134][379]LogSavePackage: Save=34.01ms
+[2016.06.13-05.32.42:134][379]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/MyWorld_Auto22467D87042A81B7C4206619B04A627E2.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/Hasegawa/MyWorld_Auto2.umap'
+[2016.06.13-05.32.42:136][379]LogSavePackage: Total save time: 38.07ms
+[2016.06.13-05.32.42:136][379]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/Hasegawa/MyWorld_Auto2.umap
+[2016.06.13-05.32.42:137][379]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Hasegawa/MyWorld' took 0.069
+[2016.06.13-05.32.42:137][379]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.069
+[2016.06.13-05.32.42:143][379]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/BP_player] ([1] browsable assets)...
+[2016.06.13-05.32.42:143][379]OBJ SavePackage: Finished generating thumbnails for package [/Game/BP_player]
+[2016.06.13-05.32.42:143][379]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_player" FILE="../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/BP_player_Auto2.uasset" SILENT=false AUTOSAVING=true
+[2016.06.13-05.32.42:166][379]LogSavePackage: Save=21.50ms
+[2016.06.13-05.32.42:166][379]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/BP_player_Auto21841E87745430F466DA61996A115A7B7.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/BP_player_Auto2.uasset'
+[2016.06.13-05.32.42:168][379]LogSavePackage: Total save time: 23.09ms
+[2016.06.13-05.32.42:168][379]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/BP_player_Auto2.uasset
+[2016.06.13-05.32.42:168][379]LogFileHelpers: Auto-saving content packages took 0.029
+[2016.06.13-05.42.42:654][312]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Hasegawa/MyWorld' took 0.024
+[2016.06.13-05.42.42:659][312]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/BP_player] ([1] browsable assets)...
+[2016.06.13-05.42.42:659][312]OBJ SavePackage: Finished generating thumbnails for package [/Game/BP_player]
+[2016.06.13-05.42.42:659][312]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_player" FILE="../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/BP_player_Auto3.uasset" SILENT=false AUTOSAVING=true
+[2016.06.13-05.42.42:687][312]LogSavePackage: Save=26.93ms
+[2016.06.13-05.42.42:687][312]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/BP_player_Auto318C7B0FA44CA9CB470BB8D8B5F7D770D.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/BP_player_Auto3.uasset'
+[2016.06.13-05.42.42:689][312]LogSavePackage: Total save time: 29.11ms
+[2016.06.13-05.42.42:689][312]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/BP_player_Auto3.uasset
+[2016.06.13-05.42.42:689][312]LogFileHelpers: Auto-saving content packages took 0.035
+[2016.06.13-05.52.43:540][ 58]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Hasegawa/MyWorld' took 0.024
+[2016.06.13-05.52.43:544][ 58]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/BP_player] ([1] browsable assets)...
+[2016.06.13-05.52.43:545][ 58]OBJ SavePackage: Finished generating thumbnails for package [/Game/BP_player]
+[2016.06.13-05.52.43:545][ 58]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_player" FILE="../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/BP_player_Auto4.uasset" SILENT=false AUTOSAVING=true
+[2016.06.13-05.52.43:575][ 58]LogSavePackage: Save=29.42ms
+[2016.06.13-05.52.43:576][ 58]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/BP_player_Auto47F52CD2F48D93507323BB5ADBA132C89.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/BP_player_Auto4.uasset'
+[2016.06.13-05.52.43:577][ 58]LogSavePackage: Total save time: 31.56ms
+[2016.06.13-05.52.43:577][ 58]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/BP_player_Auto4.uasset
+[2016.06.13-05.52.43:577][ 58]LogFileHelpers: Auto-saving content packages took 0.037
+[2016.06.13-06.03.50:833][747]BlueprintLog: New page: BP_player をコンパイル
+[2016.06.13-06.03.50:993][747]BlueprintEditorCompileResults: 情報 [4460.36] BP_player のコンパイルに成功しました！  [ 159 ミリ秒]
+[2016.06.13-06.03.53:411][878]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.13-06.03.53:411][878]PIE: New page: PIEセッション: MyWorld (2016/06/14 0:03:53)
+[2016.06.13-06.03.53:411][878]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-06.03.53:419][878]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007163s)
+[2016.06.13-06.03.53:419][878]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-06.03.53:419][878]LogPlayLevel: PIE: World Init took: (0.000786s)
+[2016.06.13-06.03.53:420][878]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.008266s)
+[2016.06.13-06.03.53:442][878]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-06.03.53:456][878]LogInit: FAudioDevice initialized.
+[2016.06.13-06.03.53:491][878]LogWorld: Game class is 'GameMode'
+[2016.06.13-06.03.53:494][878]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-15.03.53
+[2016.06.13-06.03.53:495][878]LogWorld: Bringing up level for play took: 0.002020
+[2016.06.13-06.03.53:503][878]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld 0.228のプレイ イン エディタの開始時間
+[2016.06.13-06.03.53:531][880]LogRenderer: Reallocating scene render targets to support 1280x724 (Frame:130918).
+[2016.06.13-06.04.00:627][ 56]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_player" FILE="../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/BP_player.uasset" SILENT=true
+[2016.06.13-06.04.00:678][ 56]LogSavePackage: Save=49.91ms
+[2016.06.13-06.04.00:678][ 56]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/BP_player03C12A104CFC267A747B9A82299EEBC5.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/BP_player.uasset'
+[2016.06.13-06.04.00:682][ 56]LogSavePackage: Total save time: 53.63ms
+[2016.06.13-06.04.00:682][ 56]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/BP_player.uasset
+[2016.06.13-06.05.13:694][381]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2016.06.13-06.07.24:798][783]LogUObjectGlobals:Warning: オブジェクト 'Class なし.None' が見つかりませんでした
+[2016.06.13-06.07.26:260][868]Cmd: UpdateLandscapeSetup
+[2016.06.13-06.07.28:353][989]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2016.06.13-06.07.55:489][989]LogTexture:Display: テクスチャをビルド中: 127grey (AutoDXT)
+[2016.06.13-06.07.55:491][989]LogTexture:Display: テクスチャをビルド中: DebugNumberStrip (AutoDXT)
+[2016.06.13-06.07.55:506][989]LogTexture:Display: テクスチャをビルド中: DebugNumberPeriod (AutoDXT)
+[2016.06.13-06.07.55:563][989]LogTexture:Display: テクスチャをビルド中: T_EV_BlankWhite_01 (AutoDXT)
+[2016.06.13-06.07.55:668][989]LogTexture:Display: テクスチャをビルド中: FlatNormal (BC5)
+[2016.06.13-06.07.55:733][989]LogTexture:Display: テクスチャをビルド中: T_EV_BlankWhite_01 (AutoDXT)
+[2016.06.13-06.07.55:788][990]Cmd: UpdateLandscapeSetup
+[2016.06.13-06.07.56:036][990]LogSavePackage: Save=31.58ms
+[2016.06.13-06.07.56:036][990]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/MyWorld_Auto52A03390340B40516839F0C963CF86402.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/Hasegawa/MyWorld_Auto5.umap'
+[2016.06.13-06.07.56:052][990]LogSavePackage: Total save time: 49.76ms
+[2016.06.13-06.07.56:052][990]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/Hasegawa/MyWorld_Auto5.umap
+[2016.06.13-06.07.56:054][990]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Hasegawa/MyWorld' took 0.161
+[2016.06.13-06.07.56:054][990]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.161
+[2016.06.13-06.08.59:142][689]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2016.06.13-06.09.25:695][361]SourceControl: 情報 fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Blueprints/RenderToTexture_Game.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Blueprints/RenderToTexture_Game.uasset' is outside repository
+[2016.06.13-06.09.37:223][645]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Hasegawa/MyWorld" FILE="../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/Hasegawa/MyWorld.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2016.06.13-06.09.37:273][645]LogSavePackage: Save=26.34ms
+[2016.06.13-06.09.37:273][645]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/MyWorldFF05DCBB4DF7E590AC6693B1AE6DB32E.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/Hasegawa/MyWorld.umap'
+[2016.06.13-06.09.37:276][645]LogSavePackage: Total save time: 30.60ms
+[2016.06.13-06.09.37:276][645]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/Hasegawa/MyWorld.umap
+[2016.06.13-06.09.40:026][800]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.13-06.09.40:026][800]PIE: New page: PIEセッション: MyWorld (2016/06/14 0:09:40)
+[2016.06.13-06.09.40:026][800]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-06.09.40:030][800]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004243s)
+[2016.06.13-06.09.40:032][800]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-06.09.40:032][800]LogPlayLevel: PIE: World Init took: (0.001987s)
+[2016.06.13-06.09.40:032][800]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.006456s)
+[2016.06.13-06.09.40:058][800]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-06.09.40:070][800]LogInit: FAudioDevice initialized.
+[2016.06.13-06.09.40:101][800]LogWorld: Game class is 'RenderToTexture_Game_C'
+[2016.06.13-06.09.40:103][800]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-15.09.40
+[2016.06.13-06.09.40:104][800]LogWorld: Bringing up level for play took: 0.001900
+[2016.06.13-06.09.40:106][800]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld 0.829のプレイ イン エディタの開始時間
+[2016.06.13-06.11.17:800][520]LogStats: FPlatformStackWalk::StackWalkAndDump - 51.177 s
+[2016.06.13-06.11.17:800][520]LogOutputDevice:Warning: === Handled error: ===
+
+Ensure condition failed: OwnerActor [File:D:\BuildFarm\buildmachine_++UE4+Release-4.11\Engine\Source\Runtime\Engine\Private\AI\Navigation\NavigationSystem.cpp] [Line: 2493]
+
+Stack: 
+UE4Editor-Core.dll!FWindowsPlatformStackWalk::StackWalkAndDump() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\core\private\windows\windowsplatformstackwalk.cpp:178]
+UE4Editor-Core.dll!FDebug::EnsureFailed() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\core\private\misc\outputdevice.cpp:317]
+UE4Editor-Core.dll!FDebug::OptionallyLogFormattedEnsureMessageReturningFalse() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\core\private\misc\outputdevice.cpp:441]
+UE4Editor-Engine.dll!UNavigationSystem::UpdateComponentInNavOctree() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\engine\private\ai\navigation\navigationsystem.cpp:2493]
+UE4Editor-Engine.dll!USceneComponent::PostEditChangeProperty() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\engine\private\components\scenecomponent.cpp:293]
+UE4Editor-Engine.dll!UPrimitiveComponent::PostEditChangeProperty() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\engine\private\components\primitivecomponent.cpp:636]
+UE4Editor-DetailCustomizations.dll!FComponentTransformDetails::ScaleObject() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\editor\detailcustomizations\private\componenttransformdetails.cpp:1448]
+UE4Editor-DetailCustomizations.dll!FComponentTransformDetails::OnSetScale() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\editor\detailcustomizations\private\componenttransformdetails.cpp:1335]
+UE4Editor-DetailCustomizations.dll!TBaseSPMethodDelegateInstance<0,FComponentTransformDetails,0,TTypeWrapper<void> __cdecl(float,enum ETextCommit::Type),int>::Execute() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\core\public\delegates\delegateinstancesimpl_variadics.inl:321]
+UE4Editor-DetailCustomizations.dll!TBaseSPMethodDelegateInstance<0,FComponentTransformDetails,0,void __cdecl(float,enum ETextCommit::Type),int>::ExecuteIfSafe() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\core\public\delegates\delegateinstancesimpl_variadics.inl:428]
+UE4Editor-Slate.dll!TBaseDelegate<void,float,enum ETextCommit::Type>::ExecuteIfBound() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\core\public\delegates\delegatesignatureimpl_variadics.inl:608]
+UE4Editor-Slate.dll!SNumericEntryBox<float>::SendChangesFromText() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\slate\public\widgets\input\snumericentrybox.h:388]
+UE4Editor-Slate.dll!TBaseSPMethodDelegateInstance<0,SNumericEntryBox<float>,0,TTypeWrapper<void> __cdecl(FText const & __ptr64,enum ETextCommit::Type)>::Execute() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\core\public\delegates\delegateinstancesimpl_variadics.inl:321]
+UE4Editor-Slate.dll!TBaseSPMethodDelegateInstance<0,SNumericEntryBox<float>,0,void __cdecl(FText const & __ptr64,enum ETextCommit::Type)>::ExecuteIfSafe() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\core\public\delegates\delegateinstancesimpl_variadics.inl:428]
+UE4Editor-Slate.dll!TBaseDelegate<void,FText const & __ptr64,enum ETextCommit::Type>::ExecuteIfBound() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\core\public\delegates\delegatesignatureimpl_variadics.inl:608]
+UE4Editor-Slate.dll!SEditableText::OnEnter() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\slate\private\widgets\input\seditabletext.cpp:913]
+UE4Editor-Slate.dll!FTextEditHelper::OnKeyDown() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\slate\private\framework\text\textedithelper.cpp:191]
+UE4Editor-Slate.dll!SEditableText::OnKeyDown() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\slate\private\widgets\input\seditabletext.cpp:1520]
+UE4Editor-Slate.dll!<lambda_e1745c795c7326f2fd88258380f76fa6>::operator()() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\slate\private\framework\application\slateapplication.cpp:4177]
+UE4Editor-Slate.dll!FEventRouter::Route<FReply,FEventRouter::FBubblePolicy,FKeyEvent,<lambda_e1745c795c7326f2fd88258380f76fa6> >() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\slate\private\framework\application\slateapplication.cpp:214]
+UE4Editor-Slate.dll!FEventRouter::RouteAlongFocusPath<FEventRouter::FBubblePolicy,<lambda_e1745c795c7326f2fd88258380f76fa6>,FKeyEvent>() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\slate\private\framework\application\slateapplication.cpp:196]
+UE4Editor-Slate.dll!FSlateApplication::ProcessKeyDownEvent() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\slate\private\framework\application\slateapplication.cpp:4175]
+UE4Editor-Slate.dll!FSlateApplication::OnKeyDown() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\slate\private\framework\application\slateapplication.cpp:4100]
+UE4Editor-Core.dll!FWindowsApplication::ProcessDeferredMessage() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\core\private\windows\windowsapplication.cpp:1271]
+UE4Editor-Core.dll!FWindowsApplication::DeferMessage() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\core\private\windows\windowsapplication.cpp:1732]
+UE4Editor-Core.dll!FWindowsApplication::ProcessMessage() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\core\private\windows\windowsapplication.cpp:697]
+UE4Editor-Core.dll!FWindowsApplication::AppWndProc() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\core\private\windows\windowsapplication.cpp:619]
+USER32.dll
+USER32.dll
+UE4Editor-Core.dll!FWindowsPlatformMisc::PumpMessages() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\core\private\windows\windowsplatformmisc.cpp:884]
+UE4Editor.exe!FEngineLoop::Tick() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\launch\private\launchengineloop.cpp:2611]
+UE4Editor.exe!GuardedMain() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\launch\private\launch.cpp:142]
+UE4Editor.exe!GuardedMainWrapper() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\launch\private\windows\launchwindows.cpp:126]
+UE4Editor.exe!WinMain() [d:\buildfarm\buildmachine_++ue4+release-4.11\engine\source\runtime\launch\private\windows\launchwindows.cpp:200]
+UE4Editor.exe!__scrt_common_main_seh() [f:\dd\vctools\crt\vcstartup\src\startup\exe_common.inl:264]
+KERNEL32.DLL
+ntdll.dll
+ntdll.dll
+
+[2016.06.13-06.11.17:816][520]LogStats:                SubmitErrorReport -  0.015 s
+[2016.06.13-06.11.24:894][520]LogStats:                    SendNewReport -  7.078 s
+[2016.06.13-06.11.24:894][520]LogStats:             FDebug::EnsureFailed - 58.271 s
+[2016.06.13-06.11.24:897][520]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-06.11.33:969][868]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_0) Not registered. Aborting.
+[2016.06.13-06.11.36:165][999]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_1) Not registered. Aborting.
+[2016.06.13-06.11.39:782][216]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_2) Not registered. Aborting.
+[2016.06.13-06.11.41:846][340]BlueprintLog: New page: BP_player をコンパイル
+[2016.06.13-06.11.41:865][340]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_3) Not registered. Aborting.
+[2016.06.13-06.11.42:040][340]BlueprintEditorCompileResults: 情報 [4931.40] BP_player のコンパイルに成功しました！  [ 194 ミリ秒]
+[2016.06.13-06.11.46:731][572]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.13-06.11.46:731][572]PIE: New page: PIEセッション: MyWorld (2016/06/14 0:11:46)
+[2016.06.13-06.11.46:731][572]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-06.11.46:735][572]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003701s)
+[2016.06.13-06.11.46:736][572]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-06.11.46:736][572]LogPlayLevel: PIE: World Init took: (0.000988s)
+[2016.06.13-06.11.46:736][572]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.004883s)
+[2016.06.13-06.11.46:736][572]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-06.11.46:760][572]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-06.11.46:774][572]LogInit: FAudioDevice initialized.
+[2016.06.13-06.11.46:813][572]LogWorld: Game class is 'RenderToTexture_Game_C'
+[2016.06.13-06.11.46:816][572]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-15.11.46
+[2016.06.13-06.11.46:816][572]LogWorld: Bringing up level for play took: 0.001900
+[2016.06.13-06.11.46:826][572]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld -0.452のプレイ イン エディタの開始時間
+[2016.06.13-06.14.50:608][875]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-06.22.26:139][404]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_4) Not registered. Aborting.
+[2016.06.13-06.23.31:193][ 63]BlueprintLog: New page: BP_player をコンパイル
+[2016.06.13-06.23.31:218][ 63]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_5) Not registered. Aborting.
+[2016.06.13-06.23.31:308][ 63]BlueprintEditorCompileResults: 情報 [5640.67] BP_player のコンパイルに成功しました！  [ 115 ミリ秒]
+[2016.06.13-06.25.01:626][584]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (PlayerStart)
+[2016.06.13-06.25.31:798][144]BlueprintLog: New page: BP_player をコンパイル
+[2016.06.13-06.25.31:815][144]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-06.25.31:909][144]BlueprintEditorCompileResults: 情報 [5761.27] BP_player のコンパイルに成功しました！  [ 109 ミリ秒]
+[2016.06.13-06.25.39:913][585]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.25.39:913][585]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.13-06.25.39:914][585]PIE: New page: PIEセッション: MyWorld (2016/06/14 0:25:39)
+[2016.06.13-06.25.39:914][585]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-06.25.39:919][585]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005444s)
+[2016.06.13-06.25.39:920][585]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-06.25.39:921][585]LogPlayLevel: PIE: World Init took: (0.001454s)
+[2016.06.13-06.25.39:921][585]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.007136s)
+[2016.06.13-06.25.39:921][585]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-06.25.39:948][585]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-06.25.39:960][585]LogInit: FAudioDevice initialized.
+[2016.06.13-06.25.39:990][585]LogWorld: Game class is 'RenderToTexture_Game_C'
+[2016.06.13-06.25.39:992][585]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-15.25.39
+[2016.06.13-06.25.39:993][585]LogWorld: Bringing up level for play took: 0.001801
+[2016.06.13-06.25.39:995][585]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld 0.718のプレイ イン エディタの開始時間
+[2016.06.13-06.25.39:995][585]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.25.43:828][801]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.25.44:297][801]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.25.51:413][213]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2016.06.13-06.25.54:227][376]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.25.54:227][376]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.13-06.25.54:228][376]PIE: New page: PIEセッション: MyWorld (2016/06/14 0:25:54)
+[2016.06.13-06.25.54:228][376]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-06.25.54:233][376]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005659s)
+[2016.06.13-06.25.54:235][376]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-06.25.54:235][376]LogPlayLevel: PIE: World Init took: (0.001204s)
+[2016.06.13-06.25.54:235][376]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.007072s)
+[2016.06.13-06.25.54:259][376]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-06.25.54:270][376]LogInit: FAudioDevice initialized.
+[2016.06.13-06.25.54:304][376]LogWorld: Game class is 'RenderToTexture_Game_C'
+[2016.06.13-06.25.54:306][376]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-15.25.54
+[2016.06.13-06.25.54:307][376]LogWorld: Bringing up level for play took: 0.001767
+[2016.06.13-06.25.54:309][376]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld 1.032のプレイ イン エディタの開始時間
+[2016.06.13-06.25.54:309][376]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.25.56:256][483]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.25.56:892][483]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.25.59:691][631]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.25.59:691][631]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.13-06.25.59:691][631]PIE: New page: PIEセッション: MyWorld (2016/06/14 0:25:59)
+[2016.06.13-06.25.59:691][631]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-06.25.59:696][631]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005045s)
+[2016.06.13-06.25.59:697][631]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-06.25.59:697][631]LogPlayLevel: PIE: World Init took: (0.001159s)
+[2016.06.13-06.25.59:697][631]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.006582s)
+[2016.06.13-06.25.59:720][631]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-06.25.59:731][631]LogInit: FAudioDevice initialized.
+[2016.06.13-06.25.59:760][631]LogWorld: Game class is 'RenderToTexture_Game_C'
+[2016.06.13-06.25.59:763][631]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-15.25.59
+[2016.06.13-06.25.59:763][631]LogWorld: Bringing up level for play took: 0.002490
+[2016.06.13-06.25.59:766][631]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld 0.489のプレイ イン エディタの開始時間
+[2016.06.13-06.25.59:766][631]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.26.05:889][980]LogSelection:Warning: PIE object was selected: "PlayerState /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld:PersistentLevel.PlayerState_26"
+[2016.06.13-06.26.06:753][ 19]LogSelection:Warning: PIE object was selected: "RenderToTexture_Game_C /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld:PersistentLevel.RenderToTexture_Game_C_4"
+[2016.06.13-06.26.09:625][144]LogSelection:Warning: PIE object was selected: "BP_player_C /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld:PersistentLevel.BP_player_C_16"
+[2016.06.13-06.26.25:231][815]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.26.25:624][815]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.26.43:013][756]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_player" FILE="../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/BP_player.uasset" SILENT=true
+[2016.06.13-06.26.43:075][756]LogSavePackage: Save=57.89ms
+[2016.06.13-06.26.43:075][756]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/BP_player4D3EF62049FA2A732E18E1819F82CCB1.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/BP_player.uasset'
+[2016.06.13-06.26.43:078][756]LogSavePackage: Total save time: 63.19ms
+[2016.06.13-06.26.43:078][756]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/BP_player.uasset
+[2016.06.13-06.27.38:036][506]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-06.30.18:831][792]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_6) Not registered. Aborting.
+[2016.06.13-06.30.18:976][792]LogSavePackage: Save=104.50ms
+[2016.06.13-06.30.18:976][792]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/MyWorld_Auto6FF0F3552463EF56901595D8F5E2A46A1.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/Hasegawa/MyWorld_Auto6.umap'
+[2016.06.13-06.30.18:978][792]LogSavePackage: Total save time: 110.62ms
+[2016.06.13-06.30.18:978][792]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/Hasegawa/MyWorld_Auto6.umap
+[2016.06.13-06.30.18:980][792]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Hasegawa/MyWorld' took 0.149
+[2016.06.13-06.30.18:980][792]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.149
+[2016.06.13-06.30.18:986][792]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/BP_player] ([1] browsable assets)...
+[2016.06.13-06.30.19:038][792]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/BP_player.BP_player]
+[2016.06.13-06.30.19:038][792]OBJ SavePackage: Finished generating thumbnails for package [/Game/BP_player]
+[2016.06.13-06.30.19:038][792]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_player" FILE="../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/BP_player_Auto6.uasset" SILENT=false AUTOSAVING=true
+[2016.06.13-06.30.19:111][792]LogSavePackage: Save=69.76ms
+[2016.06.13-06.30.19:111][792]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/BP_player_Auto6F7BDE7054F85336AFF67058FE6094269.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/BP_player_Auto6.uasset'
+[2016.06.13-06.30.19:112][792]LogSavePackage: Total save time: 72.51ms
+[2016.06.13-06.30.19:112][792]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/BP_player_Auto6.uasset
+[2016.06.13-06.30.19:117][792]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Engine/ArtTools/RenderToTexture/Blueprints/RenderToTexture_Game] ([1] browsable assets)...
+[2016.06.13-06.30.19:117][792]OBJ SavePackage: Finished generating thumbnails for package [/Engine/ArtTools/RenderToTexture/Blueprints/RenderToTexture_Game]
+[2016.06.13-06.30.19:129][792]LogSavePackage: Save=8.79ms
+[2016.06.13-06.30.19:129][792]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/RenderToTexture_Game_Auto6BE7AB0D241B6DC852452789E37A4DED8.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Engine/ArtTools/RenderToTexture/Blueprints/RenderToTexture_Game_Auto6.uasset'
+[2016.06.13-06.30.19:131][792]LogSavePackage: Total save time: 12.46ms
+[2016.06.13-06.30.19:131][792]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Engine/ArtTools/RenderToTexture/Blueprints/RenderToTexture_Game_Auto6.uasset
+[2016.06.13-06.30.19:131][792]LogFileHelpers: Auto-saving content packages took 0.149
+[2016.06.13-06.39.32:449][611]BlueprintLog: New page: BP_player をコンパイル
+[2016.06.13-06.39.32:480][611]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-06.39.32:589][611]BlueprintEditorCompileResults: 情報 [6601.95] BP_player のコンパイルに成功しました！  [ 139 ミリ秒]
+[2016.06.13-06.39.43:955][233]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.39.43:955][233]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.13-06.39.43:955][233]PIE: New page: PIEセッション: MyWorld (2016/06/14 0:39:43)
+[2016.06.13-06.39.43:955][233]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-06.39.43:960][233]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004874s)
+[2016.06.13-06.39.43:961][233]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-06.39.43:961][233]LogPlayLevel: PIE: World Init took: (0.000833s)
+[2016.06.13-06.39.43:961][233]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.005987s)
+[2016.06.13-06.39.43:962][233]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-06.39.43:989][233]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-06.39.44:002][233]LogInit: FAudioDevice initialized.
+[2016.06.13-06.39.44:045][233]LogWorld: Game class is 'RenderToTexture_Game_C'
+[2016.06.13-06.39.44:048][233]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-15.39.44
+[2016.06.13-06.39.44:050][233]LogWorld: Bringing up level for play took: 0.002944
+[2016.06.13-06.39.44:114][233]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld 0.836のプレイ イン エディタの開始時間
+[2016.06.13-06.39.44:114][233]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.39.48:358][484]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.39.49:516][484]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.39.52:347][588]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.39.52:347][588]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.13-06.39.52:348][588]PIE: New page: PIEセッション: MyWorld (2016/06/14 0:39:52)
+[2016.06.13-06.39.52:348][588]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-06.39.52:352][588]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004023s)
+[2016.06.13-06.39.52:353][588]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-06.39.52:353][588]LogPlayLevel: PIE: World Init took: (0.001419s)
+[2016.06.13-06.39.52:353][588]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.005710s)
+[2016.06.13-06.39.52:378][588]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-06.39.52:391][588]LogInit: FAudioDevice initialized.
+[2016.06.13-06.39.52:428][588]LogWorld: Game class is 'RenderToTexture_Game_C'
+[2016.06.13-06.39.52:431][588]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-15.39.52
+[2016.06.13-06.39.52:431][588]LogWorld: Bringing up level for play took: 0.002256
+[2016.06.13-06.39.52:438][588]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld -0.839のプレイ イン エディタの開始時間
+[2016.06.13-06.39.52:438][588]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.39.57:424][848]LogRenderer: Reallocating scene render targets to support 1280x832 (Frame:159604).
+[2016.06.13-06.40.05:348][319]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.40.06:200][319]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.41.22:092][385]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-06.41.22:123][385]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Hasegawa/MyWorld' took 0.031
+[2016.06.13-06.41.22:130][385]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/BP_player] ([1] browsable assets)...
+[2016.06.13-06.41.22:151][385]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/BP_player.BP_player]
+[2016.06.13-06.41.22:151][385]OBJ SavePackage: Finished generating thumbnails for package [/Game/BP_player]
+[2016.06.13-06.41.22:151][385]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_player" FILE="../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/BP_player_Auto7.uasset" SILENT=false AUTOSAVING=true
+[2016.06.13-06.41.22:229][385]LogSavePackage: Save=70.68ms
+[2016.06.13-06.41.22:229][385]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/BP_player_Auto744025097485109FC7A2163A109D8BED2.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/BP_player_Auto7.uasset'
+[2016.06.13-06.41.22:231][385]LogSavePackage: Total save time: 78.21ms
+[2016.06.13-06.41.22:231][385]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/BP_player_Auto7.uasset
+[2016.06.13-06.41.22:231][385]LogFileHelpers: Auto-saving content packages took 0.107
+[2016.06.13-06.42.40:701][204]Cmd: DELETE
+[2016.06.13-06.42.40:701][204]Cmd: ACTOR DELETE
+[2016.06.13-06.42.40:750][204]LogEditorActor: Deleted Actor: BP_player_C
+[2016.06.13-06.42.40:782][204]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-06.42.40:809][204]LogEditorActor: Deleted 1 Actors (0.108 secs)
+[2016.06.13-06.43.34:953][ 11]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (PlayerStart)
+[2016.06.13-06.43.42:591][379]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2016.06.13-06.43.45:552][550]LogEditorViewport: Clicking on Actor (LMB): CameraActor (CameraActor)
+[2016.06.13-06.44.18:533][939]EditorErrors: New page: アクタの親子付け
+[2016.06.13-06.45.08:118][454]LogEditorViewport: Clicking on Actor (LMB): Actor (human)
+[2016.06.13-06.45.20:697][193]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2016.06.13-06.45.34:057][980]LogEditorViewport: Clicking on Actor (LMB): Actor (human)
+[2016.06.13-06.46.22:771][608]LogEditorViewport: Clicking on Actor (LMB): CameraActor (CameraActor)
+[2016.06.13-06.46.30:289][999]LogEditorViewport: Clicking on Actor (CTRL LMB): Actor (human)
+[2016.06.13-06.46.32:259][101]Cmd: DELETE
+[2016.06.13-06.46.32:259][101]Cmd: ACTOR DELETE
+[2016.06.13-06.46.32:260][101]LogEditorActor: Deleted Actor: CameraActor
+[2016.06.13-06.46.32:287][101]LogEditorActor: Deleted Actor: Actor
+[2016.06.13-06.46.32:287][101]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-06.46.32:313][101]LogEditorActor: Deleted 2 Actors (0.054 secs)
+[2016.06.13-06.50.02:460][813]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-06.51.27:964][987]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.51.27:965][987]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.06.13-06.51.27:967][987]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_7) Not registered. Aborting.
+[2016.06.13-06.51.28:002][987]LogPlayLevel: [PlayLevel] Compiling BP_player before play...
+[2016.06.13-06.51.28:106][987]LogPlayLevel: PlayLevel: Blueprint regeneration took 141 ms (1 blueprints)
+[2016.06.13-06.51.28:132][987]PIE: New page: PIEセッション: MyWorld (2016/06/14 0:51:28)
+[2016.06.13-06.51.28:132][987]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-06.51.28:138][987]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005368s)
+[2016.06.13-06.51.28:138][987]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-06.51.28:139][987]LogPlayLevel: PIE: World Init took: (0.000968s)
+[2016.06.13-06.51.28:139][987]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.006598s)
+[2016.06.13-06.51.28:168][987]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-06.51.28:181][987]LogInit: FAudioDevice initialized.
+[2016.06.13-06.51.28:217][987]LogWorld: Game class is 'RenderToTexture_Game_C'
+[2016.06.13-06.51.28:219][987]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-15.51.28
+[2016.06.13-06.51.28:220][987]LogWorld: Bringing up level for play took: 0.001902
+[2016.06.13-06.51.28:227][987]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld 0.951のプレイ イン エディタの開始時間
+[2016.06.13-06.51.28:228][987]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.51.47:714][ 16]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.51.47:773][ 16]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.51.47:773][ 16]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-06.51.53:490][304]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.51.53:490][304]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.13-06.51.53:490][304]PIE: New page: PIEセッション: MyWorld (2016/06/14 0:51:53)
+[2016.06.13-06.51.53:490][304]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-06.51.53:497][304]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006622s)
+[2016.06.13-06.51.53:499][304]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-06.51.53:499][304]LogPlayLevel: PIE: World Init took: (0.001822s)
+[2016.06.13-06.51.53:499][304]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.008655s)
+[2016.06.13-06.51.53:522][304]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-06.51.53:534][304]LogInit: FAudioDevice initialized.
+[2016.06.13-06.51.53:574][304]LogWorld: Game class is 'RenderToTexture_Game_C'
+[2016.06.13-06.51.53:576][304]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-15.51.53
+[2016.06.13-06.51.53:577][304]LogWorld: Bringing up level for play took: 0.001866
+[2016.06.13-06.51.53:583][304]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld 0.306のプレイ イン エディタの開始時間
+[2016.06.13-06.51.53:583][304]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.51.53:584][304]LogBlueprintDebug:Warning: Hit breakpoint on node 'CallFunc_K2_SetRelativeLocation', from offset 298
+[2016.06.13-06.51.53:584][304]LogBlueprintDebug: 
+Script call stack:
+	Function /Game/BP_player.BP_player_C:InpAxisKeyEvt_MouseX_K2Node_InputAxisKeyEvent_37
+	Function /Game/BP_player.BP_player_C:ExecuteUbergraph_BP_player
+
+[2016.06.13-06.52.00:671][304]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.52.00:725][304]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.53.25:382][772]LogSavePackage: Save=102.90ms
+[2016.06.13-06.53.25:382][772]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/MyWorld_Auto89D8495F640E029EDE3724C861B642977.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/Hasegawa/MyWorld_Auto8.umap'
+[2016.06.13-06.53.25:384][772]LogSavePackage: Total save time: 107.74ms
+[2016.06.13-06.53.25:384][772]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/Hasegawa/MyWorld_Auto8.umap
+[2016.06.13-06.53.25:385][772]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Hasegawa/MyWorld' took 0.140
+[2016.06.13-06.53.25:385][772]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.140
+[2016.06.13-06.53.25:391][772]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/BP_player] ([1] browsable assets)...
+[2016.06.13-06.53.25:414][772]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/BP_player.BP_player]
+[2016.06.13-06.53.25:414][772]OBJ SavePackage: Finished generating thumbnails for package [/Game/BP_player]
+[2016.06.13-06.53.25:414][772]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_player" FILE="../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/BP_player_Auto8.uasset" SILENT=false AUTOSAVING=true
+[2016.06.13-06.53.25:494][772]LogSavePackage: Save=76.29ms
+[2016.06.13-06.53.25:494][772]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/BP_player_Auto8DB9357C0429EF1E47BAFC49091CFF015.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/BP_player_Auto8.uasset'
+[2016.06.13-06.53.25:496][772]LogSavePackage: Total save time: 81.04ms
+[2016.06.13-06.53.25:496][772]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/BP_player_Auto8.uasset
+[2016.06.13-06.53.25:496][772]LogFileHelpers: Auto-saving content packages took 0.110
+[2016.06.13-06.55.48:491][439]BlueprintLog: New page: BP_player をコンパイル
+[2016.06.13-06.55.48:513][439]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-06.55.48:608][439]BlueprintEditorCompileResults: 情報 [7577.97] BP_player のコンパイルに成功しました！  [ 116 ミリ秒]
+[2016.06.13-06.55.53:116][505]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.55.53:116][505]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.13-06.55.53:116][505]PIE: New page: PIEセッション: MyWorld (2016/06/14 0:55:53)
+[2016.06.13-06.55.53:117][505]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-06.55.53:121][505]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004856s)
+[2016.06.13-06.55.53:122][505]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-06.55.53:122][505]LogPlayLevel: PIE: World Init took: (0.000977s)
+[2016.06.13-06.55.53:123][505]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.006055s)
+[2016.06.13-06.55.53:123][505]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-06.55.53:148][505]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-06.55.53:161][505]LogInit: FAudioDevice initialized.
+[2016.06.13-06.55.53:198][505]LogWorld: Game class is 'RenderToTexture_Game_C'
+[2016.06.13-06.55.53:202][505]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-15.55.53
+[2016.06.13-06.55.53:203][505]LogWorld: Bringing up level for play took: 0.003580
+[2016.06.13-06.55.53:211][505]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld -0.066のプレイ イン エディタの開始時間
+[2016.06.13-06.55.53:212][505]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.55.57:986][788]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.55.58:037][788]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.56.09:433][411]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.56.09:433][411]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.13-06.56.09:433][411]PIE: New page: PIEセッション: MyWorld (2016/06/14 0:56:09)
+[2016.06.13-06.56.09:434][411]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-06.56.09:438][411]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004295s)
+[2016.06.13-06.56.09:439][411]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-06.56.09:439][411]LogPlayLevel: PIE: World Init took: (0.001251s)
+[2016.06.13-06.56.09:439][411]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.005780s)
+[2016.06.13-06.56.09:464][411]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-06.56.09:527][411]LogInit: FAudioDevice initialized.
+[2016.06.13-06.56.09:569][411]LogWorld: Game class is 'RenderToTexture_Game_C'
+[2016.06.13-06.56.09:572][411]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-15.56.09
+[2016.06.13-06.56.09:572][411]LogWorld: Bringing up level for play took: 0.001775
+[2016.06.13-06.56.09:583][411]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld 0.305のプレイ イン エディタの開始時間
+[2016.06.13-06.56.09:583][411]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.56.13:189][624]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.56.13:237][624]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.56.41:976][785]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.56.41:976][785]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.06.13-06.56.41:978][785]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-06.56.42:008][785]LogPlayLevel: [PlayLevel] Compiling BP_player before play...
+[2016.06.13-06.56.42:109][785]LogPlayLevel: PlayLevel: Blueprint regeneration took 133 ms (1 blueprints)
+[2016.06.13-06.56.42:139][785]PIE: New page: PIEセッション: MyWorld (2016/06/14 0:56:42)
+[2016.06.13-06.56.42:139][785]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-06.56.42:144][785]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005144s)
+[2016.06.13-06.56.42:145][785]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-06.56.42:145][785]LogPlayLevel: PIE: World Init took: (0.000874s)
+[2016.06.13-06.56.42:145][785]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.006293s)
+[2016.06.13-06.56.42:172][785]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-06.56.42:185][785]LogInit: FAudioDevice initialized.
+[2016.06.13-06.56.42:226][785]LogWorld: Game class is 'RenderToTexture_Game_C'
+[2016.06.13-06.56.42:229][785]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-15.56.42
+[2016.06.13-06.56.42:229][785]LogWorld: Bringing up level for play took: 0.001790
+[2016.06.13-06.56.42:235][785]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld 0.959のプレイ イン エディタの開始時間
+[2016.06.13-06.56.42:235][785]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.56.55:786][329]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.56.55:839][329]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.56.55:839][329]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-06.57.11:244][171]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.57.11:244][171]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.06.13-06.57.11:246][171]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-06.57.11:272][171]LogPlayLevel: [PlayLevel] Compiling BP_player before play...
+[2016.06.13-06.57.11:366][171]LogPlayLevel: PlayLevel: Blueprint regeneration took 122 ms (1 blueprints)
+[2016.06.13-06.57.11:395][171]PIE: New page: PIEセッション: MyWorld (2016/06/14 0:57:11)
+[2016.06.13-06.57.11:395][171]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-06.57.11:400][171]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004647s)
+[2016.06.13-06.57.11:400][171]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-06.57.11:401][171]LogPlayLevel: PIE: World Init took: (0.000811s)
+[2016.06.13-06.57.11:401][171]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.005661s)
+[2016.06.13-06.57.11:432][171]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-06.57.11:444][171]LogInit: FAudioDevice initialized.
+[2016.06.13-06.57.11:482][171]LogWorld: Game class is 'RenderToTexture_Game_C'
+[2016.06.13-06.57.11:485][171]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-15.57.11
+[2016.06.13-06.57.11:486][171]LogWorld: Bringing up level for play took: 0.002903
+[2016.06.13-06.57.11:491][171]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld 0.224のプレイ イン エディタの開始時間
+[2016.06.13-06.57.11:491][171]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.57.20:112][555]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.57.20:159][555]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.57.20:159][555]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-06.57.55:715][101]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.57.55:715][101]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.06.13-06.57.55:718][101]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-06.57.55:749][101]LogPlayLevel: [PlayLevel] Compiling BP_player before play...
+[2016.06.13-06.57.55:843][101]LogPlayLevel: PlayLevel: Blueprint regeneration took 127 ms (1 blueprints)
+[2016.06.13-06.57.55:872][101]PIE: New page: PIEセッション: MyWorld (2016/06/14 0:57:55)
+[2016.06.13-06.57.55:872][101]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-06.57.55:879][101]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006582s)
+[2016.06.13-06.57.55:880][101]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-06.57.55:880][101]LogPlayLevel: PIE: World Init took: (0.001328s)
+[2016.06.13-06.57.55:880][101]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.008182s)
+[2016.06.13-06.57.55:907][101]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-06.57.55:921][101]LogInit: FAudioDevice initialized.
+[2016.06.13-06.57.55:960][101]LogWorld: Game class is 'RenderToTexture_Game_C'
+[2016.06.13-06.57.55:962][101]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-15.57.55
+[2016.06.13-06.57.55:963][101]LogWorld: Bringing up level for play took: 0.001771
+[2016.06.13-06.57.55:970][101]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld 0.716のプレイ イン エディタの開始時間
+[2016.06.13-06.57.55:970][101]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.58.15:221][ 70]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.58.15:275][ 70]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-06.58.15:275][ 70]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-07.02.10:101][823]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2016.06.13-07.02.52:736][930]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.02.52:736][930]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.06.13-07.02.52:739][930]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-07.02.52:774][930]LogPlayLevel: [PlayLevel] Compiling BP_player before play...
+[2016.06.13-07.02.52:871][930]LogPlayLevel: PlayLevel: Blueprint regeneration took 134 ms (1 blueprints)
+[2016.06.13-07.02.52:900][930]PIE: New page: PIEセッション: MyWorld (2016/06/14 1:02:52)
+[2016.06.13-07.02.52:900][930]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-07.02.52:907][930]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006293s)
+[2016.06.13-07.02.52:908][930]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-07.02.52:908][930]LogPlayLevel: PIE: World Init took: (0.001060s)
+[2016.06.13-07.02.52:908][930]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.007579s)
+[2016.06.13-07.02.52:939][930]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-07.02.52:954][930]LogInit: FAudioDevice initialized.
+[2016.06.13-07.02.52:994][930]LogWorld: Game class is 'RenderToTexture_Game_C'
+[2016.06.13-07.02.52:997][930]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-16.02.52
+[2016.06.13-07.02.52:998][930]LogWorld: Bringing up level for play took: 0.002870
+[2016.06.13-07.02.53:005][930]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld -0.178のプレイ イン エディタの開始時間
+[2016.06.13-07.02.53:005][930]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.03.05:881][581]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.03.05:954][581]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.03.05:954][581]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-07.03.17:992][230]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.03.17:992][230]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.06.13-07.03.17:995][230]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-07.03.18:022][230]LogPlayLevel: [PlayLevel] Compiling BP_player before play...
+[2016.06.13-07.03.18:056][230]LogBlueprint:Error: [compiler BP_player] エラー このブループリントは SceneComponent ではありません。 ' ターゲット ' に接続が必要です。
+[2016.06.13-07.03.18:214][230]LogBlueprint:Warning: [compiler BP_player] 警告 [8027.67] BP_player のコンパイルに失敗しました。 1 致命的な問題 0 警告 [ 182 ミリ秒]
+[2016.06.13-07.03.18:214][230]LogBlueprint:Warning: [compiler BP_player] 警告 [8027.67] BP_player のコンパイルに失敗しました。 1 致命的な問題 1 警告 [ 0 ミリ秒]
+[2016.06.13-07.03.18:214][230]LogBlueprint:Warning: [compiler BP_player] 警告 [8027.67] BP_player のコンパイルに失敗しました。 1 致命的な問題 2 警告 [ 0 ミリ秒]
+[2016.06.13-07.03.18:214][230]LogBlueprint:Warning: [compiler BP_player] 警告 [8027.67] BP_player のコンパイルに失敗しました。 1 致命的な問題 3 警告 [ 0 ミリ秒]
+[2016.06.13-07.03.18:218][230]LogBlueprint:Warning: [compiler BP_player] 警告 [8027.68] BP_player のコンパイルに失敗しました。 1 致命的な問題 4 警告 [ 3 ミリ秒]
+[2016.06.13-07.03.18:218][230]LogBlueprint:Warning: [compiler BP_player] 警告 [8027.68] BP_player のコンパイルに失敗しました。 1 致命的な問題 5 警告 [ 0 ミリ秒]
+[2016.06.13-07.03.18:227][230]LogPlayLevel: PlayLevel: Blueprint regeneration took 234 ms (1 blueprints)
+[2016.06.13-07.03.18:259][230]BlueprintLog: 情報 ブループリント BP_player のコンパイルに失敗しました
+[2016.06.13-07.03.32:077][714]BlueprintLog: New page: BP_player をコンパイル
+[2016.06.13-07.03.32:099][714]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-07.03.32:192][714]BlueprintEditorCompileResults: 情報 [8041.65] BP_player のコンパイルに成功しました！  [ 115 ミリ秒]
+[2016.06.13-07.03.35:110][806]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.03.35:110][806]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.13-07.03.35:111][806]PIE: New page: PIEセッション: MyWorld (2016/06/14 1:03:35)
+[2016.06.13-07.03.35:111][806]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-07.03.35:115][806]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004260s)
+[2016.06.13-07.03.35:116][806]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-07.03.35:116][806]LogPlayLevel: PIE: World Init took: (0.001292s)
+[2016.06.13-07.03.35:116][806]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.005787s)
+[2016.06.13-07.03.35:116][806]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-07.03.35:141][806]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-07.03.35:152][806]LogInit: FAudioDevice initialized.
+[2016.06.13-07.03.35:190][806]LogWorld: Game class is 'RenderToTexture_Game_C'
+[2016.06.13-07.03.35:193][806]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-16.03.35
+[2016.06.13-07.03.35:193][806]LogWorld: Bringing up level for play took: 0.002122
+[2016.06.13-07.03.35:204][806]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld 0.025のプレイ イン エディタの開始時間
+[2016.06.13-07.03.35:205][806]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.03.41:302][169]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.03.41:353][169]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.04.07:665][496]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.04.07:665][496]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.06.13-07.04.07:668][496]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-07.04.07:696][496]LogPlayLevel: [PlayLevel] Compiling BP_player before play...
+[2016.06.13-07.04.07:791][496]LogPlayLevel: PlayLevel: Blueprint regeneration took 125 ms (1 blueprints)
+[2016.06.13-07.04.07:820][496]PIE: New page: PIEセッション: MyWorld (2016/06/14 1:04:07)
+[2016.06.13-07.04.07:820][496]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-07.04.07:825][496]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005062s)
+[2016.06.13-07.04.07:826][496]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-07.04.07:826][496]LogPlayLevel: PIE: World Init took: (0.000715s)
+[2016.06.13-07.04.07:826][496]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.006058s)
+[2016.06.13-07.04.07:859][496]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-07.04.07:872][496]LogInit: FAudioDevice initialized.
+[2016.06.13-07.04.07:908][496]LogWorld: Game class is 'RenderToTexture_Game_C'
+[2016.06.13-07.04.07:910][496]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-16.04.07
+[2016.06.13-07.04.07:911][496]LogWorld: Bringing up level for play took: 0.001907
+[2016.06.13-07.04.07:916][496]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld 0.741のプレイ イン エディタの開始時間
+[2016.06.13-07.04.07:916][496]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.04.12:992][689]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.04.13:042][689]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.04.13:042][689]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-07.04.24:060][305]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.04.24:060][305]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.13-07.04.24:060][305]PIE: New page: PIEセッション: MyWorld (2016/06/14 1:04:24)
+[2016.06.13-07.04.24:060][305]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-07.04.24:065][305]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004463s)
+[2016.06.13-07.04.24:065][305]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-07.04.24:065][305]LogPlayLevel: PIE: World Init took: (0.000660s)
+[2016.06.13-07.04.24:065][305]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.005323s)
+[2016.06.13-07.04.24:090][305]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-07.04.24:164][305]LogInit: FAudioDevice initialized.
+[2016.06.13-07.04.24:200][305]LogWorld: Game class is 'RenderToTexture_Game_C'
+[2016.06.13-07.04.24:203][305]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-16.04.24
+[2016.06.13-07.04.24:203][305]LogWorld: Bringing up level for play took: 0.001918
+[2016.06.13-07.04.24:210][305]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld 1.036のプレイ イン エディタの開始時間
+[2016.06.13-07.04.24:210][305]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.04.30:219][663]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.04.30:272][663]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.06.16:550][670]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-07.06.16:697][670]LogSavePackage: Save=109.01ms
+[2016.06.13-07.06.16:697][670]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/MyWorld_Auto975D0C52544B81C52E1FCC8B94F9988A2.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/Hasegawa/MyWorld_Auto9.umap'
+[2016.06.13-07.06.16:699][670]LogSavePackage: Total save time: 114.96ms
+[2016.06.13-07.06.16:699][670]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/Hasegawa/MyWorld_Auto9.umap
+[2016.06.13-07.06.16:701][670]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Hasegawa/MyWorld' took 0.150
+[2016.06.13-07.06.16:701][670]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.150
+[2016.06.13-07.06.16:707][670]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/BP_player] ([1] browsable assets)...
+[2016.06.13-07.06.16:736][670]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/BP_player.BP_player]
+[2016.06.13-07.06.16:736][670]OBJ SavePackage: Finished generating thumbnails for package [/Game/BP_player]
+[2016.06.13-07.06.16:736][670]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_player" FILE="../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/BP_player_Auto9.uasset" SILENT=false AUTOSAVING=true
+[2016.06.13-07.06.16:824][670]LogSavePackage: Save=83.29ms
+[2016.06.13-07.06.16:824][670]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/BP_player_Auto96A1E0A2D407C730AF2E4C68825B97E7F.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/BP_player_Auto9.uasset'
+[2016.06.13-07.06.16:825][670]LogSavePackage: Total save time: 87.78ms
+[2016.06.13-07.06.16:825][670]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/BP_player_Auto9.uasset
+[2016.06.13-07.06.16:825][670]LogFileHelpers: Auto-saving content packages took 0.122
+[2016.06.13-07.06.46:673][242]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-07.06.49:013][300]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_8) Not registered. Aborting.
+[2016.06.13-07.07.04:811][846]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_9) Not registered. Aborting.
+[2016.06.13-07.08.47:243][  0]BlueprintLog: New page: BP_player をコンパイル
+[2016.06.13-07.08.47:255][  0]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_10) Not registered. Aborting.
+[2016.06.13-07.08.47:440][  0]BlueprintEditorCompileResults: 情報 [8356.93] BP_player のコンパイルに成功しました！  [ 196 ミリ秒]
+[2016.06.13-07.10.41:924][ 30]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-07.13.05:796][657]BlueprintLog: New page: BP_player をコンパイル
+[2016.06.13-07.13.05:812][657]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_11) Not registered. Aborting.
+[2016.06.13-07.13.05:997][657]BlueprintEditorCompileResults: 情報 [8615.49] BP_player のコンパイルに成功しました！  [ 200 ミリ秒]
+[2016.06.13-07.13.08:055][721]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.13.08:055][721]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.13-07.13.08:055][721]PIE: New page: PIEセッション: MyWorld (2016/06/14 1:13:08)
+[2016.06.13-07.13.08:055][721]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-07.13.08:062][721]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007038s)
+[2016.06.13-07.13.08:064][721]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-07.13.08:064][721]LogPlayLevel: PIE: World Init took: (0.001599s)
+[2016.06.13-07.13.08:064][721]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.008898s)
+[2016.06.13-07.13.08:064][721]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-07.13.08:090][721]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-07.13.08:104][721]LogInit: FAudioDevice initialized.
+[2016.06.13-07.13.08:140][721]LogWorld: Game class is 'RenderToTexture_Game_C'
+[2016.06.13-07.13.08:143][721]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-16.13.08
+[2016.06.13-07.13.08:144][721]LogWorld: Bringing up level for play took: 0.002007
+[2016.06.13-07.13.08:150][721]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld 1.005のプレイ イン エディタの開始時間
+[2016.06.13-07.13.08:150][721]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.13.10:376][852]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.13.10:438][852]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.13.21:520][334]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.13.21:520][334]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.13-07.13.21:520][334]PIE: New page: PIEセッション: MyWorld (2016/06/14 1:13:21)
+[2016.06.13-07.13.21:520][334]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-07.13.21:525][334]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004700s)
+[2016.06.13-07.13.21:525][334]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-07.13.21:526][334]LogPlayLevel: PIE: World Init took: (0.000858s)
+[2016.06.13-07.13.21:526][334]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.005848s)
+[2016.06.13-07.13.21:553][334]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-07.13.21:566][334]LogInit: FAudioDevice initialized.
+[2016.06.13-07.13.21:602][334]LogWorld: Game class is 'RenderToTexture_Game_C'
+[2016.06.13-07.13.21:606][334]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-16.13.21
+[2016.06.13-07.13.21:607][334]LogWorld: Bringing up level for play took: 0.002747
+[2016.06.13-07.13.21:613][334]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld 0.468のプレイ イン エディタの開始時間
+[2016.06.13-07.13.21:613][334]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.13.25:506][565]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.13.25:564][565]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.14.16:038][344]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.14.16:038][344]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.06.13-07.14.16:040][344]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-07.14.16:057][344]LogPlayLevel: [PlayLevel] Compiling BP_player before play...
+[2016.06.13-07.14.16:142][344]LogPlayLevel: PlayLevel: Blueprint regeneration took 104 ms (1 blueprints)
+[2016.06.13-07.14.16:169][344]PIE: New page: PIEセッション: MyWorld (2016/06/14 1:14:16)
+[2016.06.13-07.14.16:169][344]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-07.14.16:175][344]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005773s)
+[2016.06.13-07.14.16:175][344]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-07.14.16:176][344]LogPlayLevel: PIE: World Init took: (0.000994s)
+[2016.06.13-07.14.16:176][344]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.007040s)
+[2016.06.13-07.14.16:203][344]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-07.14.16:215][344]LogInit: FAudioDevice initialized.
+[2016.06.13-07.14.16:254][344]LogWorld: Game class is 'RenderToTexture_Game_C'
+[2016.06.13-07.14.16:257][344]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-16.14.16
+[2016.06.13-07.14.16:257][344]LogWorld: Bringing up level for play took: 0.002444
+[2016.06.13-07.14.16:262][344]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld 1.119のプレイ イン エディタの開始時間
+[2016.06.13-07.14.16:262][344]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.14.22:416][621]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.14.22:469][621]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.14.22:469][621]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-07.14.49:796][890]BlueprintLog: New page: BP_player をコンパイル
+[2016.06.13-07.14.49:810][890]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.06.13-07.14.49:983][890]BlueprintEditorCompileResults: 情報 [8719.48] BP_player のコンパイルに成功しました！  [ 185 ミリ秒]
+[2016.06.13-07.14.52:256][976]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.14.52:256][976]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.13-07.14.52:256][976]PIE: New page: PIEセッション: MyWorld (2016/06/14 1:14:52)
+[2016.06.13-07.14.52:256][976]LogPlayLevel: Creating play world package: /Game/Hasegawa/UEDPIE_0_MyWorld
+[2016.06.13-07.14.52:263][976]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006518s)
+[2016.06.13-07.14.52:264][976]LogAIModule: Creating AISystem for world MyWorld
+[2016.06.13-07.14.52:264][976]LogPlayLevel: PIE: World Init took: (0.001090s)
+[2016.06.13-07.14.52:264][976]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Hasegawa/MyWorld.MyWorld to /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld (0.007883s)
+[2016.06.13-07.14.52:289][976]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.06.13-07.14.52:300][976]LogInit: FAudioDevice initialized.
+[2016.06.13-07.14.52:340][976]LogWorld: Game class is 'RenderToTexture_Game_C'
+[2016.06.13-07.14.52:342][976]LogWorld: Bringing World /Game/Hasegawa/UEDPIE_0_MyWorld.MyWorld up for play (max tick rate 60) at 2016.06.13-16.14.52
+[2016.06.13-07.14.52:343][976]LogWorld: Bringing up level for play took: 0.001846
+[2016.06.13-07.14.52:348][976]PIE: 情報 /Game/Hasegawa/UEDPIE_0_MyWorld -0.795のプレイ イン エディタの開始時間
+[2016.06.13-07.14.52:348][976]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.14.58:567][346]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.14.58:636][346]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel' has LevelScriptBlueprint '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld' with GeneratedClass '/Game/Hasegawa/MyWorld.MyWorld_C' with ClassGeneratedBy '/Game/Hasegawa/MyWorld.MyWorld:PersistentLevel.MyWorld'
+[2016.06.13-07.15.14:562][278]LogActorFactory: Actor Factory created Cube
+[2016.06.13-07.15.16:672][404]LogActorFactory: Actor Factory created Cube
+[2016.06.13-07.15.33:877][255]LogActorFactory: Actor Factory created Cone
+[2016.06.13-07.15.34:176][273]LogActorFactory: Actor Factory created Cone
+[2016.06.13-07.15.35:180][333]LogActorFactory: Actor Factory created Cone
+[2016.06.13-07.15.38:543][333]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor)
+[2016.06.13-07.15.43:340][414]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cone)
+[2016.06.13-07.15.54:723][883]LogActorFactory: Actor Factory created Sphere
+[2016.06.13-07.15.57:147][ 28]LogActorFactory: Actor Factory created Sphere
+[2016.06.13-07.16.43:684][230]LogSavePackage: Save=133.50ms
+[2016.06.13-07.16.43:684][230]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/MyWorld_Auto09E254F954E7B772D27A3028A8F3F547C.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/Hasegawa/MyWorld_Auto0.umap'
+[2016.06.13-07.16.43:686][230]LogSavePackage: Total save time: 140.33ms
+[2016.06.13-07.16.43:686][230]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/Hasegawa/MyWorld_Auto0.umap
+[2016.06.13-07.16.43:688][230]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Hasegawa/MyWorld' took 0.178
+[2016.06.13-07.16.43:688][230]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.178
+[2016.06.13-07.16.43:695][230]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/BP_player] ([1] browsable assets)...
+[2016.06.13-07.16.43:695][230]OBJ SavePackage: Finished generating thumbnails for package [/Game/BP_player]
+[2016.06.13-07.16.43:695][230]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_player" FILE="../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/BP_player_Auto0.uasset" SILENT=false AUTOSAVING=true
+[2016.06.13-07.16.43:756][230]LogSavePackage: Save=55.97ms
+[2016.06.13-07.16.43:756][230]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/BP_player_Auto05493BDCF48E0975E1D7202B438E01B44.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/BP_player_Auto0.uasset'
+[2016.06.13-07.16.43:758][230]LogSavePackage: Total save time: 62.22ms
+[2016.06.13-07.16.43:758][230]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/BP_player_Auto0.uasset
+[2016.06.13-07.16.43:758][230]LogFileHelpers: Auto-saving content packages took 0.069
+[2016.06.13-07.31.32:020][ 21]LogHttp:Warning: Timeout processing Http request. 000000902F586680
+[2016.06.13-07.31.42:395][ 49]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Hasegawa/MyWorld' took 0.020
+[2016.06.13-07.31.42:399][ 49]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/BP_player] ([1] browsable assets)...
+[2016.06.13-07.31.42:399][ 49]OBJ SavePackage: Finished generating thumbnails for package [/Game/BP_player]
+[2016.06.13-07.31.42:399][ 49]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_player" FILE="../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/BP_player_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2016.06.13-07.31.42:435][ 49]LogSavePackage: Save=32.82ms
+[2016.06.13-07.31.42:435][ 49]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/BP_player_Auto1D81CE7C943D74626F0563987CFBC90D8.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/BP_player_Auto1.uasset'
+[2016.06.13-07.31.42:436][ 49]LogSavePackage: Total save time: 36.38ms
+[2016.06.13-07.31.42:436][ 49]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/Autosaves/Game/BP_player_Auto1.uasset
+[2016.06.13-07.31.42:436][ 49]LogFileHelpers: Auto-saving content packages took 0.041
+[2016.06.13-07.32.16:239][588]SourceControl: 情報 fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Blueprints/RenderToTexture_Game.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Blueprints/RenderToTexture_Game.uasset' is outside repository
+[2016.06.13-07.32.16:283][588]Cmd: OBJ SAVEPACKAGE PACKAGE="/Engine/ArtTools/RenderToTexture/Blueprints/RenderToTexture_Game" FILE="../../../Engine/Content/ArtTools/RenderToTexture/Blueprints/RenderToTexture_Game.uasset" SILENT=true
+[2016.06.13-07.32.16:303][588]LogSavePackage: Save=6.42ms
+[2016.06.13-07.32.16:303][588]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/RenderToTexture_GameCBD5B558421411C5A577EFB9D23DD7FF.tmp' to '../../../Engine/Content/ArtTools/RenderToTexture/Blueprints/RenderToTexture_Game.uasset'
+[2016.06.13-07.32.16:306][588]LogSavePackage: Total save time: 20.79ms
+[2016.06.13-07.32.16:306][588]LogSavePackage:Display: Finished SavePackage ../../../Engine/Content/ArtTools/RenderToTexture/Blueprints/RenderToTexture_Game.uasset
+[2016.06.13-07.32.16:329][588]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_player" FILE="../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/BP_player.uasset" SILENT=true
+[2016.06.13-07.32.16:363][588]LogSavePackage: Save=31.76ms
+[2016.06.13-07.32.16:363][588]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/BP_player4BD116A547EEAFD999978C8BBD615FA9.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/BP_player.uasset'
+[2016.06.13-07.32.16:365][588]LogSavePackage: Total save time: 35.53ms
+[2016.06.13-07.32.16:365][588]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/BP_player.uasset
+[2016.06.13-07.32.16:424][588]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Hasegawa/MyWorld" FILE="../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/Hasegawa/MyWorld.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2016.06.13-07.32.16:576][588]LogSavePackage: Save=131.75ms
+[2016.06.13-07.32.16:576][588]LogSavePackage: Moving '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Saved/MyWorldBAA6E12846FD0392C82AA797FA82EBF0.tmp' to '../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/Hasegawa/MyWorld.umap'
+[2016.06.13-07.32.16:578][588]LogSavePackage: Total save time: 136.93ms
+[2016.06.13-07.32.16:578][588]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nwuser.DA/Documents/storyterror/StoryTerror/Content/Hasegawa/MyWorld.umap
+[2016.06.13-07.32.16:599][588]LogFileHelpers: Saving map 'MyWorld' took 0.230
+[2016.06.13-07.32.18:585][588]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.06.13-07.32.18:870][589]Cmd: QUIT_EDITOR
+[2016.06.13-07.32.19:835][589]LogExit: Preparing to exit.
+[2016.06.13-07.32.20:215][589]LogExit: Editor shut down
+[2016.06.13-07.32.20:218][589]LogExit: Transaction tracking system shut down
+[2016.06.13-07.32.20:507][589]LogObj: Freed 0b from 0 cluster array pools.
+[2016.06.13-07.32.20:507][589]LogExit: Object subsystem successfully closed.
+[2016.06.13-07.32.20:531][589]LogD3D11RHI: Shutdown
+[2016.06.13-07.32.20:531][589]LogD3D11RHI: CleanupD3DDevice
+[2016.06.13-07.32.20:683][589]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.06.13-07.32.20:712][589]LogDerivedDataCache: Shutdown
+[2016.06.13-07.32.20:712][589]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (206)
+[2016.06.13-07.32.20:712][589]LogModuleManager: Shutting down and abandoning module BlueprintGraph (205)
+[2016.06.13-07.32.20:712][589]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (204)
+[2016.06.13-07.32.20:712][589]LogModuleManager: Shutting down and abandoning module CrashTracker (203)
+[2016.06.13-07.32.20:712][589]LogModuleManager: Shutting down and abandoning module SceneOutliner (202)
+[2016.06.13-07.32.20:712][589]LogModuleManager: Shutting down and abandoning module SuperSearch (201)
+[2016.06.13-07.32.20:712][589]LogModuleManager: Shutting down and abandoning module WidgetCarousel (200)
+[2016.06.13-07.32.20:712][589]LogModuleManager: Shutting down and abandoning module AddContentDialog (199)
+[2016.06.13-07.32.20:724][589]LogModuleManager: Shutting down and abandoning module GameplayTags (198)
+[2016.06.13-07.32.20:724][589]LogModuleManager: Shutting down and abandoning module EditorWidgets (197)
+[2016.06.13-07.32.20:724][589]LogModuleManager: Shutting down and abandoning module CollectionManager (196)
+[2016.06.13-07.32.20:724][589]LogModuleManager: Shutting down and abandoning module StatsViewer (195)
+[2016.06.13-07.32.20:724][589]LogModuleManager: Shutting down and abandoning module FoliageEdit (194)
+[2016.06.13-07.32.20:724][589]LogModuleManager: Shutting down and abandoning module LandscapeEditor (193)
+[2016.06.13-07.32.20:724][589]LogModuleManager: Shutting down and abandoning module ActorPickerMode (192)
+[2016.06.13-07.32.20:724][589]LogModuleManager: Shutting down and abandoning module GeometryMode (191)
+[2016.06.13-07.32.20:724][589]LogModuleManager: Shutting down and abandoning module TextureAlignMode (190)
+[2016.06.13-07.32.20:724][589]LogModuleManager: Shutting down and abandoning module BspMode (189)
+[2016.06.13-07.32.20:724][589]LogModuleManager: Shutting down and abandoning module PlacementMode (188)
+[2016.06.13-07.32.20:724][589]LogModuleManager: Shutting down and abandoning module AutomationWorker (187)
+[2016.06.13-07.32.20:724][589]LogModuleManager: Shutting down and abandoning module CharacterAI (186)
+[2016.06.13-07.32.20:724][589]LogModuleManager: Shutting down and abandoning module SmartSnapping (185)
+[2016.06.13-07.32.20:724][589]LogModuleManager: Shutting down and abandoning module ViewportSnapping (184)
+[2016.06.13-07.32.20:724][589]LogModuleManager: Shutting down and abandoning module LogVisualizer (183)
+[2016.06.13-07.32.20:724][589]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (182)
+[2016.06.13-07.32.20:725][589]LogModuleManager: Shutting down and abandoning module IntroTutorials (181)
+[2016.06.13-07.32.20:725][589]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (180)
+[2016.06.13-07.32.20:725][589]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (179)
+[2016.06.13-07.32.20:725][589]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (178)
+[2016.06.13-07.32.20:725][589]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (177)
+[2016.06.13-07.32.20:964][589]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (176)
+[2016.06.13-07.32.20:964][589]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (175)
+[2016.06.13-07.32.20:964][589]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (174)
+[2016.06.13-07.32.20:964][589]LogModuleManager: Shutting down and abandoning module MergeActors (173)
+[2016.06.13-07.32.20:964][589]LogModuleManager: Shutting down and abandoning module SizeMap (172)
+[2016.06.13-07.32.20:964][589]LogModuleManager: Shutting down and abandoning module TreeMap (171)
+[2016.06.13-07.32.20:964][589]LogModuleManager: Shutting down and abandoning module ReferenceViewer (170)
+[2016.06.13-07.32.20:964][589]LogModuleManager: Shutting down and abandoning module LocalizationService (169)
+[2016.06.13-07.32.20:964][589]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (168)
+[2016.06.13-07.32.20:964][589]LogModuleManager: Shutting down and abandoning module HardwareTargeting (167)
+[2016.06.13-07.32.20:964][589]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (166)
+[2016.06.13-07.32.20:964][589]LogModuleManager: Shutting down and abandoning module UndoHistory (165)
+[2016.06.13-07.32.20:964][589]LogModuleManager: Shutting down and abandoning module UserFeedback (164)
+[2016.06.13-07.32.20:964][589]LogModuleManager: Shutting down and abandoning module XmlParser (163)
+[2016.06.13-07.32.20:964][589]LogModuleManager: Shutting down and abandoning module Blutility (162)
+[2016.06.13-07.32.20:964][589]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (161)
+[2016.06.13-07.32.20:965][589]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (160)
+[2016.06.13-07.32.20:965][589]LogModuleManager: Shutting down and abandoning module InputBindingEditor (159)
+[2016.06.13-07.32.20:965][589]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (158)
+[2016.06.13-07.32.20:965][589]LogModuleManager: Shutting down and abandoning module SettingsEditor (157)
+[2016.06.13-07.32.20:965][589]LogModuleManager: Shutting down and abandoning module ProjectLauncher (156)
+[2016.06.13-07.32.20:965][589]LogModuleManager: Shutting down and abandoning module SessionFrontend (155)
+[2016.06.13-07.32.20:965][589]LogModuleManager: Shutting down and abandoning module ProfilerClient (154)
+[2016.06.13-07.32.20:965][589]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (153)
+[2016.06.13-07.32.20:965][589]LogModuleManager: Shutting down and abandoning module DeviceManager (152)
+[2016.06.13-07.32.20:998][589]LogModuleManager: Shutting down and abandoning module AutomationController (151)
+[2016.06.13-07.32.20:998][589]LogModuleManager: Shutting down and abandoning module AutomationWindow (150)
+[2016.06.13-07.32.20:998][589]LogModuleManager: Shutting down and abandoning module Layers (149)
+[2016.06.13-07.32.20:998][589]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (148)
+[2016.06.13-07.32.20:998][589]LogModuleManager: Shutting down and abandoning module DetailCustomizations (147)
+[2016.06.13-07.32.20:998][589]LogModuleManager: Shutting down and abandoning module PackagesDialog (146)
+[2016.06.13-07.32.20:998][589]LogModuleManager: Shutting down and abandoning module Persona (145)
+[2016.06.13-07.32.20:998][589]LogModuleManager: Shutting down and abandoning module Kismet (144)
+[2016.06.13-07.32.20:998][589]LogModuleManager: Shutting down and abandoning module GraphEditor (143)
+[2016.06.13-07.32.20:998][589]LogModuleManager: Shutting down and abandoning module ClassViewer (142)
+[2016.06.13-07.32.20:999][589]LogModuleManager: Shutting down and abandoning module Toolbox (141)
+[2016.06.13-07.32.20:999][589]LogModuleManager: Shutting down and abandoning module ModuleUI (140)
+[2016.06.13-07.32.20:999][589]LogModuleManager: Shutting down and abandoning module MovieSceneTools (139)
+[2016.06.13-07.32.20:999][589]LogModuleManager: Shutting down and abandoning module OutputLog (138)
+[2016.06.13-07.32.20:999][589]LogModuleManager: Shutting down and abandoning module GammaUI (137)
+[2016.06.13-07.32.20:999][589]LogModuleManager: Shutting down and abandoning module Documentation (136)
+[2016.06.13-07.32.20:999][589]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (135)
+[2016.06.13-07.32.20:999][589]LogModuleManager: Shutting down and abandoning module AnalyticsET (134)
+[2016.06.13-07.32.20:999][589]LogModuleManager: Shutting down and abandoning module Analytics (133)
+[2016.06.13-07.32.20:999][589]LogModuleManager: Shutting down and abandoning module PortalServices (132)
+[2016.06.13-07.32.20:999][589]LogModuleManager: Shutting down and abandoning module PortalRpc (131)
+[2016.06.13-07.32.20:999][589]LogModuleManager: Shutting down and abandoning module MessagingRpc (130)
+[2016.06.13-07.32.20:999][589]LogModuleManager: Shutting down and abandoning module AITestSuite (129)
+[2016.06.13-07.32.20:999][589]LogModuleManager: Shutting down and abandoning module GameplayDebugger (128)
+[2016.06.13-07.32.20:999][589]LogModuleManager: Shutting down and abandoning module AIModule (127)
+[2016.06.13-07.32.20:999][589]LogModuleManager: Shutting down and abandoning module ProfilerService (126)
+[2016.06.13-07.32.21:009][589]LogModuleManager: Shutting down and abandoning module TaskGraph (125)
+[2016.06.13-07.32.21:009][589]LogModuleManager: Shutting down and abandoning module SlateRemote (124)
+[2016.06.13-07.32.21:009][589]LogModuleManager: Shutting down and abandoning module SteamVRController (123)
+[2016.06.13-07.32.21:009][589]LogModuleManager: Shutting down and abandoning module SteamVR (122)
+[2016.06.13-07.32.21:009][589]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (121)
+[2016.06.13-07.32.21:009][589]LogModuleManager: Shutting down and abandoning module OculusLibrary (120)
+[2016.06.13-07.32.21:009][589]LogModuleManager: Shutting down and abandoning module OculusInput (119)
+[2016.06.13-07.32.21:009][589]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (118)
+[2016.06.13-07.32.21:009][589]LogModuleManager: Shutting down and abandoning module CableComponent (117)
+[2016.06.13-07.32.21:009][589]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (116)
+[2016.06.13-07.32.21:009][589]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (115)
+[2016.06.13-07.32.21:009][589]LogModuleManager: Shutting down and abandoning module HTML5Networking (114)
+[2016.06.13-07.32.21:009][589]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (113)
+[2016.06.13-07.32.21:009][589]LogModuleManager: Shutting down and abandoning module PluginBrowser (112)
+[2016.06.13-07.32.21:009][589]LogModuleManager: Shutting down and abandoning module EpicSurvey (111)
+[2016.06.13-07.32.21:009][589]LogModuleManager: Shutting down and abandoning module DesktopPlatform (110)
+[2016.06.13-07.32.21:009][589]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (109)
+[2016.06.13-07.32.21:009][589]LogModuleManager: Shutting down and abandoning module UObjectPlugin (108)
+[2016.06.13-07.32.21:009][589]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (107)
+[2016.06.13-07.32.21:009][589]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (106)
+[2016.06.13-07.32.21:009][589]LogModuleManager: Shutting down and abandoning module SourceControl (105)
+[2016.06.13-07.32.21:010][589]LogModuleManager: Shutting down and abandoning module GitSourceControl (104)
+[2016.06.13-07.32.21:010][589]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (103)
+[2016.06.13-07.32.21:010][589]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (102)
+[2016.06.13-07.32.21:010][589]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (101)
+[2016.06.13-07.32.21:010][589]LogModuleManager: Shutting down and abandoning module MeshPaint (100)
+[2016.06.13-07.32.21:010][589]LogModuleManager: Shutting down and abandoning module HotReload (99)
+[2016.06.13-07.32.21:023][589]LogModuleManager: Shutting down and abandoning module MainFrame (98)
+[2016.06.13-07.32.21:023][589]LogModuleManager: Shutting down and abandoning module LevelEditor (97)
+[2016.06.13-07.32.21:024][589]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (96)
+[2016.06.13-07.32.21:025][589]LogModuleManager: Shutting down and abandoning module AssetRegistry (95)
+[2016.06.13-07.32.21:170][589]LogModuleManager: Shutting down and abandoning module ContentBrowser (94)
+[2016.06.13-07.32.21:172][589]LogModuleManager: Shutting down and abandoning module Paper2DEditor (93)
+[2016.06.13-07.32.21:172][589]LogModuleManager: Shutting down and abandoning module UdpMessaging (92)
+[2016.06.13-07.32.21:273][589]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (91)
+[2016.06.13-07.32.21:273][589]LogModuleManager: Shutting down and abandoning module Paper2D (90)
+[2016.06.13-07.32.21:273][589]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (89)
+[2016.06.13-07.32.21:273][589]LogModuleManager: Shutting down and abandoning module Media (88)
+[2016.06.13-07.32.21:273][589]LogModuleManager: Shutting down and abandoning module WmfMedia (87)
+[2016.06.13-07.32.21:273][589]LogModuleManager: Shutting down and abandoning module MediaAssets (86)
+[2016.06.13-07.32.21:273][589]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (85)
+[2016.06.13-07.32.21:273][589]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (84)
+[2016.06.13-07.32.21:273][589]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (83)
+[2016.06.13-07.32.21:273][589]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (82)
+[2016.06.13-07.32.21:273][589]LogModuleManager: Shutting down and abandoning module PropertyEditor (81)
+[2016.06.13-07.32.21:273][589]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (80)
+[2016.06.13-07.32.21:273][589]LogModuleManager: Shutting down and abandoning module FunctionalTesting (79)
+[2016.06.13-07.32.21:273][589]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (78)
+[2016.06.13-07.32.21:273][589]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.06.13-07.32.21:273][589]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.06.13-07.32.21:273][589]LogModuleManager: Shutting down and abandoning module Sequencer (75)
+[2016.06.13-07.32.21:273][589]LogModuleManager: Shutting down and abandoning module AssetTools (74)
+[2016.06.13-07.32.21:273][589]LogModuleManager: Shutting down and abandoning module UMGEditor (73)
+[2016.06.13-07.32.21:273][589]LogModuleManager: Shutting down and abandoning module UMG (72)
+[2016.06.13-07.32.21:297][589]LogModuleManager: Shutting down and abandoning module SlateReflector (71)
+[2016.06.13-07.32.21:297][589]LogModuleManager: Shutting down and abandoning module Slate (70)
+[2016.06.13-07.32.21:297][589]LogModuleManager: Shutting down and abandoning module EditorStyle (69)
+[2016.06.13-07.32.21:299][589]LogModuleManager: Shutting down and abandoning module SessionServices (68)
+[2016.06.13-07.32.21:299][589]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (67)
+[2016.06.13-07.32.21:299][589]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (66)
+[2016.06.13-07.32.21:299][589]LogModuleManager: Shutting down and abandoning module XAudio2 (65)
+[2016.06.13-07.32.21:299][589]LogModuleManager: Shutting down and abandoning module Networking (63)
+[2016.06.13-07.32.21:299][589]LogModuleManager: Shutting down and abandoning module Core (62)
+[2016.06.13-07.32.21:299][589]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.06.13-07.32.21:299][589]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.06.13-07.32.21:299][589]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.06.13-07.32.21:299][589]LogModuleManager: Shutting down and abandoning module CookingStats (58)
+[2016.06.13-07.32.21:299][589]LogModuleManager: Shutting down and abandoning module DerivedDataCache (57)
+[2016.06.13-07.32.21:299][589]LogDerivedDataCache: Shutdown
+[2016.06.13-07.32.21:299][589]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.06.13-07.32.21:299][589]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.06.13-07.32.21:299][589]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.06.13-07.32.21:299][589]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.06.13-07.32.21:299][589]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.06.13-07.32.21:299][589]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.06.13-07.32.21:299][589]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.06.13-07.32.21:299][589]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.06.13-07.32.21:299][589]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.06.13-07.32.21:299][589]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.06.13-07.32.21:299][589]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.06.13-07.32.21:299][589]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.06.13-07.32.21:299][589]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.06.13-07.32.21:300][589]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.06.13-07.32.21:300][589]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.06.13-07.32.21:300][589]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.06.13-07.32.21:300][589]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.06.13-07.32.21:300][589]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.06.13-07.32.21:300][589]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.06.13-07.32.21:300][589]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.06.13-07.32.21:300][589]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.06.13-07.32.21:300][589]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.06.13-07.32.21:300][589]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.06.13-07.32.21:300][589]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.06.13-07.32.21:300][589]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.06.13-07.32.21:300][589]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.06.13-07.32.21:300][589]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.06.13-07.32.21:300][589]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.06.13-07.32.21:300][589]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.06.13-07.32.21:300][589]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.06.13-07.32.21:300][589]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.06.13-07.32.21:300][589]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.06.13-07.32.21:300][589]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.06.13-07.32.21:300][589]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.06.13-07.32.21:300][589]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.06.13-07.32.21:300][589]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.06.13-07.32.21:300][589]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.06.13-07.32.21:300][589]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.06.13-07.32.22:802][589]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.06.13-07.32.22:802][589]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.06.13-07.32.22:802][589]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.06.13-07.32.22:802][589]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.06.13-07.32.22:802][589]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.06.13-07.32.22:802][589]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.06.13-07.32.22:802][589]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.06.13-07.32.22:811][589]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.06.13-07.32.22:811][589]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.06.13-07.32.22:811][589]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.06.13-07.32.22:811][589]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.06.13-07.32.22:811][589]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.06.13-07.32.22:811][589]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.06.13-07.32.22:811][589]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.06.13-07.32.22:811][589]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.06.13-07.32.22:812][589]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.06.13-07.32.22:812][589]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.06.13-07.32.22:874][589]LogExit: Exiting.
+[2016.06.13-07.32.23:032][589]Log file closed, 06/13/16 16:32:23
