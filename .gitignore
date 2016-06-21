@@ -60,6 +60,9 @@ Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
-StoryTerror/Saved/Backup/*
-StoryTerror/Saved/Autosaves/*
-StoryTerror/Saved/Logs/*
+
+# StoryTerror/Saved/Backup/*
+# StoryTerror/Saved/Autosaves/*
+# StoryTerror/Saved/Logs/*
+
+*.log
