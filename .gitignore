@@ -60,6 +60,16 @@ Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+<<<<<<< Updated upstream
 StoryTerror/Saved/Backup/
 StoryTerror/Saved/Autosaves/
 StoryTerror/Saved/Logs/
+<<<<<<< Updated upstream
+StoryTerror/Saved/Stats/
+=======
+=======
+StoryTerror/Saved/Logs/
+StoryTerror/Saved/Backup/BP_player_2016-06-19-21-11-41.uasset
+StoryTerror/Saved/Backup/
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
