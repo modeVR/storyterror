@@ -38,6 +38,7 @@
 *.opensdf
 *.sdf
 *.VC.opendb
+*.json
 
 # Precompiled Assets
 SourceArt/**/*.png
