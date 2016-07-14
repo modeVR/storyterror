@@ -6,6 +6,7 @@ ParentGuid:00000000-0000-0000-0000-000000000000
 /Game/Hasegawa/Blueprint/BarragiObject.BarragiObject
 /Game/Hasegawa/Blueprint/ClickingObject.ClickingObject
 /Game/Hasegawa/Blueprint/PressObject.PressObject
+/Game/otsuka/ACtor/A_Lever.A_Lever
 /Game/otsuka/BaseBluePrint/ClickableObject.ClickableObject
 /Game/otsuka/BaseBluePrint/FadingTextRender.FadingTextRender
 /Game/otsuka/BaseBluePrint/SQ_3DSound.SQ_3DSound
@@ -16,7 +17,7 @@ ParentGuid:00000000-0000-0000-0000-000000000000
 /Game/otsuka/Level/L_tutrealStage_actor.L_tutrealStage_actor
 /Game/otsuka/Level/L_tutrealStage_Light.L_tutrealStage_Light
 /Game/otsuka/Level/L_tutrealStage_Main.L_tutrealStage_Main
-/Game/Suzuki/Untitled.Untitled
+/Game/Suzuki/Hondana.Hondana
 <<<<<<< HEAD
 =======
 >>>>>>> origin/suzuki
