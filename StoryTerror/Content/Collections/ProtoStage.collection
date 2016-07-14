@@ -4,12 +4,6 @@ Guid:98A93139-456D-5140-659B-5D9714BC9EAD
 ParentGuid:00000000-0000-0000-0000-000000000000
 
 /Game/otsuka/GI_GameInstance.GI_GameInstance
-/Game/otsuka/Level/L_Ending.L_Ending
-/Game/otsuka/Level/L_ProtoTypeLevel.L_ProtoTypeLevel
-/Game/otsuka/Level/L_Title.L_Title
-/Game/otsuka/Level/L_tutrealStage_actor.L_tutrealStage_actor
-/Game/otsuka/Level/L_tutrealStage_Light.L_tutrealStage_Light
-/Game/otsuka/Level/L_tutrealStage_Main.L_tutrealStage_Main
 <<<<<<< HEAD
 =======
 >>>>>>> origin/suzuki
