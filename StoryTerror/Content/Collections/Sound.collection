@@ -3,3 +3,8 @@ Type:Static
 Guid:A9CAB4D6-4294-24A3-180A-66861E850793
 ParentGuid:98A93139-456D-5140-659B-5D9714BC9EAD
 
+/Game/otsuka/Sound/book-close.book-close
+/Game/otsuka/Sound/book-reading.book-reading
+/Game/otsuka/Sound/open.open
+/Game/otsuka/Sound/open1.open1
+/Game/otsuka/Sound/open2.open2
